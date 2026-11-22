@@ -1,0 +1,14 @@
+{
+  "name": "wi24rd-mimir",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Wi24rd Mimir - GH Insights-tracker. Keeps GitHub traffic and release download history in your own account.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test",
+    "collect": "node src/collect.mjs",
+    "setup": "node src/setup.mjs"
+  }
+}

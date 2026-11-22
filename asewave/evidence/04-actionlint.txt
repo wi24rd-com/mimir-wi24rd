@@ -1,0 +1,4 @@
+$ actionlint -version
+1.7.12
+$ actionlint .github/workflows/collect.yml
+exit=0

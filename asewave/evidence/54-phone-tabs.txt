@@ -1,0 +1,11 @@
+$ node tabs.mjs   (does the fifth tab fit the screen, by width and language; demo, Chrome without a screen)
+320 en {"fits":false,"lastRight":366,"scrolls":true}
+320 da {"fits":false,"lastRight":338,"scrolls":true}
+360 en {"fits":false,"lastRight":366,"scrolls":true}
+360 da {"fits":true,"lastRight":338,"scrolls":false}
+375 en {"fits":true,"lastRight":366,"scrolls":false}
+375 da {"fits":true,"lastRight":338,"scrolls":false}
+390 en {"fits":true,"lastRight":366,"scrolls":false}
+390 da {"fits":true,"lastRight":338,"scrolls":false}
+430 en {"fits":true,"lastRight":366,"scrolls":false}
+430 da {"fits":true,"lastRight":338,"scrolls":false}

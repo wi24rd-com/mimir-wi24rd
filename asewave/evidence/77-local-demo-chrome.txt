@@ -1,0 +1,2 @@
+$ node src/dashboard.mjs --demo --no-open   (opened in Chrome 153, headless)
+{"url":"local --demo","demoChip":true,"repos":true,"errors":[],"outsideRequests":[]}

@@ -1,0 +1,131 @@
+name: Collect
+
+on:
+  schedule:
+    # Twice a day. GitHub keeps traffic figures for 14 days, so a missed run loses nothing.
+    - cron: "17 3,15 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: mimir-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    # A fresh copy of Mimir does nothing until setup has run: setup stores this variable.
+    if: ${{ vars.MIMIR_APP_CLIENT_ID != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write # commits to the "data" branch of this repository
+      issues: write # opens an issue when a collection fails
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Read mimir.json
+        id: cfg
+        run: node src/config.mjs >> "$GITHUB_OUTPUT"
+
+      # A token that lives for one hour and can only read "Administration"
+      # (which is where GitHub keeps traffic figures) on the repositories you
+      # chose when installing your app. A repository that is listed in
+      # mimir.json but missing from the app is reported by name in the next steps.
+      - name: Get a short-lived token
+        id: app
+        uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
+        with:
+          client-id: ${{ vars.MIMIR_APP_CLIENT_ID }}
+          private-key: ${{ secrets.MIMIR_APP_PRIVATE_KEY }}
+          owner: ${{ steps.cfg.outputs.owner }}
+          permission-administration: read
+
+      - name: Fetch the data branch
+        run: |
+          gh auth setup-git
+          url="https://github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "$url" data >/dev/null 2>&1; then
+            git clone --quiet --depth 1 --branch data "$url" data
+          else
+            git init --quiet --initial-branch data data
+            git -C data remote add origin "$url"
+          fi
+
+      - name: Collect
+        id: collect
+        env:
+          MIMIR_TOKEN: ${{ steps.app.outputs.token }}
+          MIMIR_PASSPHRASE: ${{ secrets.MIMIR_PASSPHRASE }}
+          MIMIR_DATA_DIR: data
+        run: node src/collect.mjs
+
+      # Runs even when some requests failed, so the figures that did arrive are kept.
+      - name: Save the data
+        if: ${{ !cancelled() && steps.app.outcome == 'success' }}
+        run: |
+          cd data
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+            exit 0
+          fi
+          # The commit carries the day only, so the data branch does not show
+          # at what time a collection ran or was started by hand.
+          day="$(date -u +%F)"
+          GIT_AUTHOR_DATE="${day}T00:00:00Z" GIT_COMMITTER_DATE="${day}T00:00:00Z" \
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit --quiet -m "data: ${day}"
+          git push --quiet origin data
+
+      - name: Report a failed collection
+        if: ${{ failure() }}
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Mimir: collection failed"
+          body="A collection did not complete. Figures older than 14 days are lost if this continues. Run: ${RUN_URL}"
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          fi
+
+      - name: Close the failure report after a good run
+        if: ${{ success() }}
+        run: |
+          title="Mimir: collection failed"
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            gh issue close "$number" --repo "$GITHUB_REPOSITORY" --comment "Collection is working again."
+          fi
+
+      # GitHub switches scheduled workflows off after 60 days without activity,
+      # and Mimir only commits to the "data" branch. After 45 quiet days on the
+      # main branch this opens one issue, so you hear about it while there is time.
+      - name: Warn in good time before GitHub pauses the schedule
+        if: ${{ !cancelled() }}
+        run: node src/guard.mjs
+
+  # Switching a workflow on again is what keeps GitHub from pausing its schedule.
+  # It is a job of its own, so the job that collects does not get this permission.
+  keep-alive:
+    if: ${{ vars.MIMIR_APP_CLIENT_ID != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions:
+      actions: write # switches this workflow on; nothing else is done with it
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Keep the schedule switched on
+        run: |
+          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/collect.yml/enable" \
+            || echo "::warning::Could not confirm that the schedule is switched on."

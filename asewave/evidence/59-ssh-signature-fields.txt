@@ -1,0 +1,14 @@
+The fields of the SSH signature on the newest commit, read from Jan's repository.
+Question: does the signature hold a time of its own beside the fixed commit time?
+
+-----BEGIN SSH SIGNATURE-----
+magic b'SSHSIG' version 1 total bytes 243
+publickey 104 b'ecdsa-sha2-nistp256'
+namespace 3 b'git'
+reserved 0 b''
+hash_algorithm 6 b'sha512'
+signature 100 b'ecdsa-sha2-nistp256'
+rest bytes 0
+
+Answer: no. Key, namespace, an empty reserved field, hash algorithm and the
+signature account for every byte.

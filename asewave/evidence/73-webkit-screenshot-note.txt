@@ -1,0 +1,8 @@
+$ node probe2.mjs   (WebKit 27.2, the demo on a Pages-like address, all five views, then one screenshot)
+before screenshot: 1 [
+  'Failed to load resource: the server responded with a status of 404 (Not Found)'
+]
+after screenshot: 2
+
+The 404 is mimir-source.json, which only the local command serves; on GitHub Pages the page expects it to be missing.
+The second message appears only when the test tool takes the screenshot: "Refused to apply a stylesheet ... style-src".

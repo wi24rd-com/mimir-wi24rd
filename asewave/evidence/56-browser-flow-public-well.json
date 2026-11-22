@@ -1,0 +1,36 @@
+{
+ "front": {
+  "title": "Figures from GitHub",
+  "well": true,
+  "stones": 14,
+  "points": [
+   "img lantern: 499 views, 64 clones, +8 downloads",
+   "img quill-notes: 149 views, 19 clones, +0 downloads",
+   "img tidepool: 51 views, 5 clones, +0 downloads"
+  ],
+  "wellRows": [
+   "lantern | 499 | 64 | +8",
+   "quill-notes | 149 | 19 | +0",
+   "tidepool | 51 | 5 | +0"
+  ],
+  "figureRows": 5,
+  "notes": [
+   "The Well: the last 14 days.",
+   "As of 21 Nov."
+  ],
+  "leaks": false,
+  "passField": false
+ },
+ "clickDoesNothing": {
+  "stillFront": true,
+  "dimmed": 0,
+  "hash": ""
+ },
+ "lockAfterButton": true,
+ "phone": {
+  "note": "Brønden: de seneste 14 dage.",
+  "overflow": false
+ },
+ "problems": [],
+ "external": []
+}

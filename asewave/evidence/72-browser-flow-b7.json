@@ -1,0 +1,1061 @@
+{
+ "scenarios": 36,
+ "checks": 186,
+ "failed": 0,
+ "results": [
+  {
+   "browser": "chrome-desktop: empty copy, then demo",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "an empty copy says the figures could not be loaded",
+     "ok": true
+    },
+    {
+     "name": "the demo is marked Demo",
+     "ok": true
+    },
+    {
+     "name": "three invented repositories are listed",
+     "ok": true
+    },
+    {
+     "name": "traffic: a chart is drawn",
+     "ok": true
+    },
+    {
+     "name": "downloads: release files are listed",
+     "ok": true
+    },
+    {
+     "name": "sources: referrers are listed",
+     "ok": true
+    },
+    {
+     "name": "the well is drawn with one stone per day",
+     "ok": true
+    },
+    {
+     "name": "the demo asks nobody outside the page for anything",
+     "ok": true,
+     "detail": "https://raw.githubusercontent.com/localhost/mimir/data/state.enc, https://raw.githubusercontent.com/localhost/mimir/data/state.json"
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-desktop: demo front page",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the front page says it is the demo",
+     "ok": true
+    },
+    {
+     "name": "the published Well is drawn on the front page",
+     "ok": true
+    },
+    {
+     "name": "published figures are listed",
+     "ok": true
+    },
+    {
+     "name": "nothing at all is fetched from outside",
+     "ok": true
+    },
+    {
+     "name": "the button opens the demo dashboard without a passphrase",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-desktop: stopped, GitHub says disabled_inactivity",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: GitHub has paused it because this repository had n",
+     "ok": true,
+     "detail": "Collection has stopped. GitHub has paused it because this repository had no activity for 60 days. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-desktop: stopped, GitHub says disabled_manually",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: The collecting workflow is switched off in this re",
+     "ok": true,
+     "detail": "Collection has stopped. The collecting workflow is switched off in this repository. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-desktop: stopped, GitHub says active",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-desktop: stopped, GitHub says nothing (request fails)",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-phone: empty copy, then demo",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "an empty copy says the figures could not be loaded",
+     "ok": true
+    },
+    {
+     "name": "the demo is marked Demo",
+     "ok": true
+    },
+    {
+     "name": "three invented repositories are listed",
+     "ok": true
+    },
+    {
+     "name": "traffic: a chart is drawn",
+     "ok": true
+    },
+    {
+     "name": "downloads: release files are listed",
+     "ok": true
+    },
+    {
+     "name": "sources: referrers are listed",
+     "ok": true
+    },
+    {
+     "name": "the well is drawn with one stone per day",
+     "ok": true
+    },
+    {
+     "name": "the demo asks nobody outside the page for anything",
+     "ok": true,
+     "detail": "https://raw.githubusercontent.com/localhost/mimir/data/state.enc, https://raw.githubusercontent.com/localhost/mimir/data/state.json"
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-phone: demo front page",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the front page says it is the demo",
+     "ok": true
+    },
+    {
+     "name": "the published Well is drawn on the front page",
+     "ok": true
+    },
+    {
+     "name": "published figures are listed",
+     "ok": true
+    },
+    {
+     "name": "nothing at all is fetched from outside",
+     "ok": true
+    },
+    {
+     "name": "the button opens the demo dashboard without a passphrase",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-phone: stopped, GitHub says disabled_inactivity",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: GitHub has paused it because this repository had n",
+     "ok": true,
+     "detail": "Collection has stopped. GitHub has paused it because this repository had no activity for 60 days. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-phone: stopped, GitHub says disabled_manually",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: The collecting workflow is switched off in this re",
+     "ok": true,
+     "detail": "Collection has stopped. The collecting workflow is switched off in this repository. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-phone: stopped, GitHub says active",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "chrome-phone: stopped, GitHub says nothing (request fails)",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "153.0.8010.12"
+  },
+  {
+   "browser": "firefox-desktop: empty copy, then demo",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "an empty copy says the figures could not be loaded",
+     "ok": true
+    },
+    {
+     "name": "the demo is marked Demo",
+     "ok": true
+    },
+    {
+     "name": "three invented repositories are listed",
+     "ok": true
+    },
+    {
+     "name": "traffic: a chart is drawn",
+     "ok": true
+    },
+    {
+     "name": "downloads: release files are listed",
+     "ok": true
+    },
+    {
+     "name": "sources: referrers are listed",
+     "ok": true
+    },
+    {
+     "name": "the well is drawn with one stone per day",
+     "ok": true
+    },
+    {
+     "name": "the demo asks nobody outside the page for anything",
+     "ok": true,
+     "detail": "https://raw.githubusercontent.com/localhost/mimir/data/state.enc, https://raw.githubusercontent.com/localhost/mimir/data/state.json"
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-desktop: demo front page",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the front page says it is the demo",
+     "ok": true
+    },
+    {
+     "name": "the published Well is drawn on the front page",
+     "ok": true
+    },
+    {
+     "name": "published figures are listed",
+     "ok": true
+    },
+    {
+     "name": "nothing at all is fetched from outside",
+     "ok": true
+    },
+    {
+     "name": "the button opens the demo dashboard without a passphrase",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-desktop: stopped, GitHub says disabled_inactivity",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: GitHub has paused it because this repository had n",
+     "ok": true,
+     "detail": "Collection has stopped. GitHub has paused it because this repository had no activity for 60 days. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-desktop: stopped, GitHub says disabled_manually",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: The collecting workflow is switched off in this re",
+     "ok": true,
+     "detail": "Collection has stopped. The collecting workflow is switched off in this repository. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-desktop: stopped, GitHub says active",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-desktop: stopped, GitHub says nothing (request fails)",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-phone: empty copy, then demo",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "an empty copy says the figures could not be loaded",
+     "ok": true
+    },
+    {
+     "name": "the demo is marked Demo",
+     "ok": true
+    },
+    {
+     "name": "three invented repositories are listed",
+     "ok": true
+    },
+    {
+     "name": "traffic: a chart is drawn",
+     "ok": true
+    },
+    {
+     "name": "downloads: release files are listed",
+     "ok": true
+    },
+    {
+     "name": "sources: referrers are listed",
+     "ok": true
+    },
+    {
+     "name": "the well is drawn with one stone per day",
+     "ok": true
+    },
+    {
+     "name": "the demo asks nobody outside the page for anything",
+     "ok": true,
+     "detail": "https://raw.githubusercontent.com/localhost/mimir/data/state.enc, https://raw.githubusercontent.com/localhost/mimir/data/state.json"
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-phone: demo front page",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the front page says it is the demo",
+     "ok": true
+    },
+    {
+     "name": "the published Well is drawn on the front page",
+     "ok": true
+    },
+    {
+     "name": "published figures are listed",
+     "ok": true
+    },
+    {
+     "name": "nothing at all is fetched from outside",
+     "ok": true
+    },
+    {
+     "name": "the button opens the demo dashboard without a passphrase",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-phone: stopped, GitHub says disabled_inactivity",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: GitHub has paused it because this repository had n",
+     "ok": true,
+     "detail": "Collection has stopped. GitHub has paused it because this repository had no activity for 60 days. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-phone: stopped, GitHub says disabled_manually",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: The collecting workflow is switched off in this re",
+     "ok": true,
+     "detail": "Collection has stopped. The collecting workflow is switched off in this repository. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-phone: stopped, GitHub says active",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "firefox-phone: stopped, GitHub says nothing (request fails)",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "159.0"
+  },
+  {
+   "browser": "webkit-desktop: empty copy, then demo",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "an empty copy says the figures could not be loaded",
+     "ok": true
+    },
+    {
+     "name": "the demo is marked Demo",
+     "ok": true
+    },
+    {
+     "name": "three invented repositories are listed",
+     "ok": true
+    },
+    {
+     "name": "traffic: a chart is drawn",
+     "ok": true
+    },
+    {
+     "name": "downloads: release files are listed",
+     "ok": true
+    },
+    {
+     "name": "sources: referrers are listed",
+     "ok": true
+    },
+    {
+     "name": "the well is drawn with one stone per day",
+     "ok": true
+    },
+    {
+     "name": "the demo asks nobody outside the page for anything",
+     "ok": true,
+     "detail": "https://raw.githubusercontent.com/localhost/mimir/data/state.enc, https://raw.githubusercontent.com/localhost/mimir/data/state.json"
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "screenshotNotes": 1,
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-desktop: demo front page",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the front page says it is the demo",
+     "ok": true
+    },
+    {
+     "name": "the published Well is drawn on the front page",
+     "ok": true
+    },
+    {
+     "name": "published figures are listed",
+     "ok": true
+    },
+    {
+     "name": "nothing at all is fetched from outside",
+     "ok": true
+    },
+    {
+     "name": "the button opens the demo dashboard without a passphrase",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-desktop: stopped, GitHub says disabled_inactivity",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: GitHub has paused it because this repository had n",
+     "ok": true,
+     "detail": "Collection has stopped. GitHub has paused it because this repository had no activity for 60 days. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-desktop: stopped, GitHub says disabled_manually",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: The collecting workflow is switched off in this re",
+     "ok": true,
+     "detail": "Collection has stopped. The collecting workflow is switched off in this repository. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-desktop: stopped, GitHub says active",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-desktop: stopped, GitHub says nothing (request fails)",
+   "viewport": "1280x800",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-phone: empty copy, then demo",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "an empty copy says the figures could not be loaded",
+     "ok": true
+    },
+    {
+     "name": "the demo is marked Demo",
+     "ok": true
+    },
+    {
+     "name": "three invented repositories are listed",
+     "ok": true
+    },
+    {
+     "name": "traffic: a chart is drawn",
+     "ok": true
+    },
+    {
+     "name": "downloads: release files are listed",
+     "ok": true
+    },
+    {
+     "name": "sources: referrers are listed",
+     "ok": true
+    },
+    {
+     "name": "the well is drawn with one stone per day",
+     "ok": true
+    },
+    {
+     "name": "the demo asks nobody outside the page for anything",
+     "ok": true,
+     "detail": "https://raw.githubusercontent.com/localhost/mimir/data/state.enc, https://raw.githubusercontent.com/localhost/mimir/data/state.json"
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "screenshotNotes": 1,
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-phone: demo front page",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the front page says it is the demo",
+     "ok": true
+    },
+    {
+     "name": "the published Well is drawn on the front page",
+     "ok": true
+    },
+    {
+     "name": "published figures are listed",
+     "ok": true
+    },
+    {
+     "name": "nothing at all is fetched from outside",
+     "ok": true
+    },
+    {
+     "name": "the button opens the demo dashboard without a passphrase",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "screenshotNotes": 1,
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-phone: stopped, GitHub says disabled_inactivity",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: GitHub has paused it because this repository had n",
+     "ok": true,
+     "detail": "Collection has stopped. GitHub has paused it because this repository had no activity for 60 days. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "screenshotNotes": 1,
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-phone: stopped, GitHub says disabled_manually",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: The collecting workflow is switched off in this re",
+     "ok": true,
+     "detail": "Collection has stopped. The collecting workflow is switched off in this repository. Open Actions and choose \"Enable workflow\" to start it again. GitHub only keeps traffic for 14 days."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-phone: stopped, GitHub says active",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  },
+  {
+   "browser": "webkit-phone: stopped, GitHub says nothing (request fails)",
+   "viewport": "390x844",
+   "checks": [
+    {
+     "name": "the banner says: Nothing has been collected for 80 hours",
+     "ok": true,
+     "detail": "Collection has stopped. Nothing has been collected for 80 hours. GitHub only keeps traffic for 14 days. Check the Actions tab of your Mimir repository."
+    },
+    {
+     "name": "GitHub was asked once, about the Collect workflow of this repository",
+     "ok": true,
+     "detail": "https://api.github.com/repos/localhost/mimir/actions/workflows/collect.yml"
+    },
+    {
+     "name": "the button to Actions is there only when the workflow is switched off",
+     "ok": true
+    },
+    {
+     "name": "no script errors",
+     "ok": true
+    }
+   ],
+   "version": "27.2"
+  }
+ ]
+}

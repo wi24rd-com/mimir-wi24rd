@@ -1,0 +1,70 @@
+{
+ "unlockTitle": "Open your figures",
+ "wrong": "That passphrase does not open the file. Check for a missing character and try again.",
+ "stillLocked": true,
+ "headline": "699 views and 88 clones in the last 14 days.",
+ "storage": "{\"local\":{},\"session\":{}}",
+ "fonts": [
+  "Inter",
+  "JetBrains Mono"
+ ],
+ "tabs": [
+  "Overview*",
+  "Traffic",
+  "Downloads",
+  "Sources"
+ ],
+ "groups": [
+  "Figures",
+  "Period"
+ ],
+ "commands": [
+  "Fetch again (primary)",
+  "14 days (pressed)",
+  "30 days",
+  "90 days",
+  "Everything",
+  "More"
+ ],
+ "titleButtons": [
+  "Skift til dansk",
+  "Lock the figures",
+  "Theme: Follow system. Change theme",
+  "Open settings"
+ ],
+ "markColor": "rgb(53, 214, 179)",
+ "hash": "#traffic",
+ "tabAfter": "Traffic",
+ "treeCurrent": "lantern499",
+ "chip": "i14 days",
+ "tooltip": "14 Nov | Views | 20 (8 unique) | Clones | 2 (1 unique)",
+ "tooltipAll": "14 Nov | Views | 28 | Clones | 3",
+ "pressed": [
+  "90 days"
+ ],
+ "chip90": "i90 days",
+ "downloadsHead": [
+  "File",
+  "Repository",
+  "Release",
+  "Total",
+  "In period"
+ ],
+ "downloadsRows": 4,
+ "sourcesBoxes": [
+  "Where visitors came from",
+  "Most viewed pages"
+ ],
+ "langAfter": "da",
+ "tabsDa": [
+  "Oversigt",
+  "Trafik",
+  "Downloads",
+  "Kilder"
+ ],
+ "afterRefreshStillOpen": true,
+ "copyDisabled": true,
+ "lockedAgain": true,
+ "problems": [],
+ "external": []
+}

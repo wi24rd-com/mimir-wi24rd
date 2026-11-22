@@ -1,0 +1,35 @@
+$ MIMIR_DATA_DIR=<tmp> MIMIR_CONFIG=<mimir.json with visibility public> node src/collect.mjs
+No MIMIR_TOKEN: traffic figures need it and will be reported as failed.
+Mimir 2026-11-21: 5 repos, 6 of 30 requests succeeded, mode public.
+  failed: wi24rd-com/huginn-muninn views (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/huginn-muninn clones (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/huginn-muninn referrers (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/huginn-muninn paths (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/grimnir views (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/grimnir clones (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/grimnir referrers (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/grimnir paths (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/Wi24rd-FTP views (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/Wi24rd-FTP clones (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/Wi24rd-FTP referrers (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/Wi24rd-FTP paths (HTTP 403: Resource not accessible by integration)
+  failed: wi24rd-com/Wi24rd-Site-Kit meta (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/Wi24rd-Site-Kit downloads (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/Wi24rd-Site-Kit views (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/Wi24rd-Site-Kit clones (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/Wi24rd-Site-Kit referrers (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/Wi24rd-Site-Kit paths (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/wi24rd-com meta (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/wi24rd-com downloads (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/wi24rd-com views (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/wi24rd-com clones (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/wi24rd-com referrers (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+  failed: wi24rd-com/wi24rd-com paths (HTTP 403: GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write access, cal)
+exit=2
+
+$ downloads and last_success per repo, read back from state.json
+wi24rd-com/huginn-muninn {'v1.1.0/Huginn-Muninn-1.1.0.zip': 4, 'v1.0.0/Huginn-Muninn-1.0.0.zip': 6} ['downloads', 'meta']
+wi24rd-com/grimnir {'v1.0.0/Grimnir-1.0.0.txt': 1, 'v1.0.0/Grimnir-1.0.0.zip': 0} ['downloads', 'meta']
+wi24rd-com/Wi24rd-FTP {'v1.0.1/SHA256SUMS.txt': 2, 'v1.0.1/Wi24rdFTP-Setup-1.0.1.exe': 2, 'v1.0.1/Wi24rdFTP-Setup.exe': 3} ['downloads', 'meta']
+wi24rd-com/Wi24rd-Site-Kit {} []
+wi24rd-com/wi24rd-com {} []

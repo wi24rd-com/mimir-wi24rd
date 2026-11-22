@@ -1,0 +1,19 @@
+$ actionlint .github/workflows/collect.yml; echo "exit $?"
+exit 0
+
+$ cat mimir.json
+{
+  "version": 1,
+  "visibility": "encrypted",
+  "repos": [
+    "your-account/your-repository"
+  ],
+  "public_badges": []
+}
+
+$ grep -n "if:" .github/workflows/collect.yml | head -1
+18:    if: ${{ vars.MIMIR_APP_CLIENT_ID != '' }}
+
+$ grep -rIn -F -f <mønstre> . | wc -l
+  (mønstrene er Jans tre rigtige tal fra B2, Claudes arbejdssti og klokkeslættet; de står ikke her, så filen ikke rammer sig selv. Skal være 0)
+0

@@ -1,0 +1,33 @@
+$ node src/setup.mjs   in a scratch copy, with stand-ins for gh, "git push" and the browser.
+  The stand-in lets the first collection fail the way the real one did when the app was not installed, and the second one succeed.
+
+Step 2 of 2: install the app and choose the repositories it may read.
+  Choose "Only select repositories", pick these, and press Install:
+      octo/lantern
+      octo/quill-notes
+  If nothing opens, go to: https://github.com/apps/mimir-octo-mimir/installations/new
+
+Press Enter when GitHub says the app is installed.
+GitHub Pages is on: https://octo.github.io/mimir/
+
+First collection started. Waiting for it to finish; it takes about a minute.
+  The collection could not get access: your app is not installed on your account yet.
+  Install it here, choose "Only select repositories" and pick the repositories Mimir follows:
+    https://github.com/apps/mimir-octo-mimir/installations/new
+  Press Enter when it says "Installed", and the collection is tried again. First collection started. Waiting for it to finish; it takes about a minute.
+  Collected. Your figures are in the "data" branch.
+
+Done. From here:
+  node src/show.mjs          your figures in the terminal
+  node src/dashboard.mjs     the dashboard on this computer
+  https://octo.github.io/mimir/   the dashboard on GitHub Pages, opened with your passphrase
+  Collection runs twice a day from now on.
+
+
+--- what setup asked the GitHub CLI for, from the first collection on ---
+gh workflow run collect.yml
+gh run list --workflow collect.yml --limit 1 --json databaseId,status,conclusion
+gh run view 101 --log-failed
+gh run list --workflow collect.yml --limit 1 --json databaseId,status,conclusion
+gh workflow run collect.yml
+gh run list --workflow collect.yml --limit 1 --json databaseId,status,conclusion

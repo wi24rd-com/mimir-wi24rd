@@ -1,0 +1,141 @@
+{
+ "frontTitle": "Figures from GitHub",
+ "frontRows": [
+  "Total downloads = 618",
+  "Stars = 268",
+  "Downloads of lantern = 581",
+  "Downloads of quill-notes = 37",
+  "Downloads of tidepool = 0"
+ ],
+ "frontAsOf": [
+  "As of 21 Nov."
+ ],
+ "frontHasPassField": false,
+ "frontLeaks": false,
+ "wrong": {
+  "message": "That passphrase does not open the file. Check for a missing character and try again.",
+  "stillLocked": true,
+  "remembered": null
+ },
+ "can": {
+  "plain": true,
+  "bio": true
+ },
+ "rememberBoxes": [
+  "Passphrase",
+  "Remember on this device",
+  "Ask for Face ID, a fingerprint or the device PIN each time"
+ ],
+ "extraHiddenAtFirst": true,
+ "extraShown": true,
+ "plainWarningHiddenWithBio": true,
+ "noticeAfterBio": "✓This device now remembers your passphrase and will ask for Face ID, a fingerprint or the device PIN.",
+ "credentials": 1,
+ "stored": [
+  {
+   "kind": "bio",
+   "keys": [
+    "ct",
+    "id",
+    "iv",
+    "kind",
+    "salt"
+   ],
+   "text": false
+  }
+ ],
+ "webStorage": "{\"local\":{},\"session\":{}}",
+ "phoneAddress": "https://example.github.io/mimir/",
+ "phoneNote": "iThis is the demo, so the address is an example.",
+ "phoneDevice": "This device remembers your passphrase and asks for Face ID, a fingerprint or the device PIN before it opens.",
+ "qrColors": {
+  "light": "rgb(255, 255, 255)",
+  "dark": "rgb(7, 14, 23)"
+ },
+ "qrBox": {
+  "x": 425,
+  "y": 188.5,
+  "height": 200,
+  "width": 200
+ },
+ "codesBefore": "Paste one of these into a README. It works once this mimir.json is saved, the next collection has run and the repository is public. The picture is drawn by shields.io, which reads the figure from your data branch.",
+ "badgeNames": [
+  "Total downloads",
+  "Stars",
+  "Downloads of lantern",
+  "Downloads of quill-notes",
+  "Downloads of tidepool"
+ ],
+ "firstCodes": [
+  "![Downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fexample%2Fmimir%2Fdata%2Fbadges%2Ftotal_downloads.json)",
+  "<img alt=\"Downloads\" src=\"https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fexample%2Fmimir%2Fdata%2Fbadges%2Ftotal_downloads.json\">"
+ ],
+ "newFile": [
+  "total_downloads",
+  "stars",
+  "repo_downloads"
+ ],
+ "afterReload": {
+  "front": false,
+  "body": "This device remembers your passphrase. It asks for Face ID, a fingerprint or the device PIN before it opens.",
+  "buttons": [
+   "Open with Face ID or fingerprint",
+   "Open with passphrase",
+   "Forget this device"
+  ]
+ },
+ "openedWithBio": "699 views and 88 clones in the last 14 days.",
+ "refused": {
+  "message": "iThis is the demo with invented figures. Your own passphrase does not open it. The demo passphrase is shown in the terminal where you started it.",
+  "stillLocked": true
+ },
+ "afterForget": {
+  "message": "iThis is the demo with invented figures. Your own passphrase does not open it. The demo passphrase is shown in the terminal where you started it.",
+  "kind": null
+ },
+ "plainWarningShown": "Without that check, anyone holding this unlocked device can open the figures.",
+ "noticeAfterPlain": "✓This device now remembers your passphrase and opens without asking.",
+ "plainReload": {
+  "openedDirectly": true
+ },
+ "plainAfterLock": {
+  "locked": true,
+  "buttons": [
+   "Open",
+   "Open with passphrase",
+   "Forget this device"
+  ]
+ },
+ "noPrf": {
+  "notice": "!This device or its password manager cannot protect a passphrase with Face ID or a fingerprint. Nothing was remembered.",
+  "kind": null
+ },
+ "numericAddress": {
+  "can": {
+   "plain": true,
+   "bio": false
+  },
+  "boxes": [
+   "Passphrase",
+   "Remember on this device"
+  ]
+ },
+ "manifest": {
+  "name": "Wi24rd Mimir",
+  "display": "standalone",
+  "start_url": "./",
+  "icons": [
+   "icons/icon-192.png 200",
+   "icons/icon-512.png 200",
+   "icons/icon-maskable-512.png 200",
+   "icons/apple-touch-icon.png 200"
+  ],
+  "linked": "manifest.webmanifest"
+ },
+ "frontDa": {
+  "title": "Tal fra GitHub",
+  "button": "Åbn dine tal"
+ },
+ "problems": [],
+ "external": []
+}

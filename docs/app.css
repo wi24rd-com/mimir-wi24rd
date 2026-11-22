@@ -1,0 +1,180 @@
+/* Wi24rd Mimir: the program's own styles. Colors, type and spacing come from
+   Wi24rd UI Kit 2 (kit/tokens.css). Only tokens here, never colour codes. */
+
+/* The kit's window is 900 x 560 at least. Mimir is also read on a phone, so it
+   sets its own minimum and rearranges itself below 900 px (see the end). */
+:root { --vindue-min-bredde: 320px; --vindue-min-hoejde: 420px; }
+body { margin: 0; }
+.vindue { height: 100dvh; }
+
+/* Title bar, as in Grimnir and Huginn and Muninn: the mark as a mask the kit
+   colours, the name, a short line beside it, and word buttons to the right. */
+.mimir-mrk { width: 22px; -webkit-mask-image: url(mimir-mark.svg); mask-image: url(mimir-mark.svg); -webkit-mask-size: 30px; mask-size: 30px; -webkit-mask-position: center; mask-position: center; }
+.titel b { flex: none; white-space: nowrap; }
+.titel small { flex: none; white-space: nowrap; color: var(--rail-text); font-size: var(--small-size); }
+.titel .rk.mimir-ord { width: auto; padding: 0 var(--space-2); font-size: 13px; }
+/* A period that is chosen: the kit's pressed look, and an accent edge as in Huginn and Muninn. */
+.cmd .cb[aria-pressed="true"] { border-color: var(--accent); }
+
+/* Work area */
+.mimir-side { max-width: 1120px; padding: var(--space-3) var(--space-3) var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); }
+.mimir-side > h1, .mimir-side > .mimir-lede { padding: 0 var(--space-1); }
+.mimir-side > h1 { margin-top: var(--space-3); }
+.mimir-side > h1 { margin: 0; font-size: var(--display-size); line-height: var(--display-line); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); max-width: 26ch; text-wrap: balance; }
+.mimir-side > h1.mimir-repo { font-size: var(--h1-size); line-height: var(--h1-line); max-width: none; }
+.mimir-side > h1 .muted { font-weight: 400; }
+.mimir-lede { margin: 0; max-width: 68ch; color: var(--text-muted); font-size: 15px; line-height: 22px; }
+.mimir-lede span + span::before { content: " "; }
+.mimir-note { flex: 1; text-align: left; max-width: 86ch; margin: 0; padding: 0 var(--space-1); font-size: var(--small-size); line-height: var(--small-line); color: var(--text-muted); }
+.mimir-to { display: grid; grid-template-columns: 3fr 2fr; gap: var(--space-4); align-items: start; }
+.mimir-smal { display: none; min-width: 0; flex: 1; }
+.mimir-smal .felt { flex-direction: row; align-items: center; gap: var(--space-2); }
+.mimir-smal .vliste { flex: 1; min-width: 0; }
+.tabel td small { display: block; color: var(--text-muted); font-family: var(--mono-family); font-size: var(--small-size); }
+.tabel th[scope="row"], .tabel td { overflow-wrap: anywhere; }
+
+/* Chart: the kit has data colours and rules, no chart component. Views are
+   --data-1 and clones --data-2, always in that order. */
+.mimir-graf { position: relative; padding: var(--space-3) var(--space-4) var(--space-2); }
+.mimir-forkl { display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--small-size); line-height: var(--small-line); color: var(--data-label); margin-bottom: var(--space-1); }
+.mimir-forkl b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.mimir-forkl i, .mimir-tip i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: var(--space-2); }
+.mimir-s1 { background: var(--data-1); stroke: var(--data-1); }
+.mimir-s2 { background: var(--data-2); stroke: var(--data-2); }
+.mimir-graf svg { display: block; width: 100%; height: auto; overflow: visible; }
+.mimir-graf svg:focus-visible { outline-offset: 4px; }
+.mimir-graf .gitter { stroke: var(--data-grid); stroke-width: 1; }
+.mimir-graf .akse { fill: var(--data-label); font: 11px var(--mono-family); }
+.mimir-graf .linje { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.mimir-graf .prik { stroke: var(--surface); stroke-width: 2; }
+.mimir-graf .prik.mimir-s1 { fill: var(--data-1); }
+.mimir-graf .prik.mimir-s2 { fill: var(--data-2); }
+.mimir-graf .sigte { stroke: var(--data-axis); stroke-width: 1; }
+.mimir-graf .flade-hit { fill: transparent; }
+.mimir-tip { position: absolute; z-index: 2; pointer-events: none; min-width: 170px; padding: var(--space-2) var(--space-3); background: var(--surface-raised); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-pop); font-size: var(--small-size); line-height: 18px; }
+.mimir-tip[hidden] { display: none; }
+.mimir-tip div { display: flex; justify-content: space-between; gap: var(--space-4); color: var(--text-muted); }
+.mimir-tip b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.mimir-graf details { margin-top: var(--space-1); }
+.mimir-graf summary { width: fit-content; cursor: pointer; color: var(--text-muted); font-size: var(--small-size); padding: var(--space-1) 0; }
+.mimir-rul { max-height: 280px; overflow: auto; }
+
+/* Passphrase screen */
+.mimir-laas { max-width: 420px; margin: 8vh auto 0; padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-4); }
+.mimir-laas h1 { margin: 0; font-size: var(--h1-size); line-height: var(--h1-line); font-weight: var(--h1-weight); }
+.mimir-laas p { margin: 0; color: var(--text-muted); }
+.mimir-laas .btn { align-self: flex-start; }
+
+/* Settings dialog */
+.mimir-indst { display: flex; flex-direction: column; gap: var(--space-4); }
+.mimir-indst pre { margin: 0; padding: var(--space-3); max-height: 220px; overflow: auto; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); font: var(--mono-size)/var(--mono-line) var(--mono-family); }
+.mimir-indst textarea { min-height: 112px; }
+.mimir-indst a { color: var(--info); }
+
+/* The Well: Mimir's well from above, drawn from the figures. This is the one
+   place Mimir is not calm. Colours are still only the kit's: --seq-1..5 for
+   "from little to much" on the rim, --data-1..3 for views, clones and
+   downloads, --accent for the pulse (the line in the mark). */
+.mimir-broend { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-4); align-items: start; }
+.b-billede { position: relative; max-width: 640px; }
+.b-billede svg { display: block; width: 100%; height: auto; }
+.b-side { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
+/* Under the Well: one box per repository, two beside each other where there is room. */
+.mimir-afsnit { margin: var(--space-4) 0 0; padding: 0 var(--space-1); font-family: var(--h2-family); font-size: var(--h2-size); line-height: var(--h2-line); font-weight: var(--h2-weight); }
+.mimir-hver { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); align-items: start; }
+.mimir-hver > .kasse:only-child { grid-column: 1 / -1; }
+.mimir-fakta { display: flex; flex-wrap: wrap; gap: var(--space-4); margin: 0; padding: 0 var(--space-4) var(--space-3); font-size: var(--small-size); line-height: var(--small-line); color: var(--data-label); }
+.mimir-fakta b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.b-kant { fill: var(--surface-raised); stroke: var(--border); stroke-width: 1; }
+.b-sten { stroke: var(--surface-raised); stroke-width: 1; }
+.b-sten.n0 { fill: var(--map-land); stroke: var(--border); }
+.b-sten.n1 { fill: var(--seq-1); }
+.b-sten.n2 { fill: var(--seq-2); }
+.b-sten.n3 { fill: var(--seq-3); }
+.b-sten.n4 { fill: var(--seq-4); }
+.b-sten.n5 { fill: var(--seq-5); }
+path.b-sten:hover { stroke: var(--text); stroke-width: 2; }
+.b-idag { fill: var(--text); }
+.b-v1 { stop-color: color-mix(in srgb, var(--data-1) 26%, var(--surface)); }
+.b-v2 { stop-color: color-mix(in srgb, var(--data-1) 10%, var(--surface)); }
+.b-v3 { stop-color: color-mix(in srgb, var(--rail) 18%, var(--surface)); }
+.b-vand { fill: url(#b-vand); stroke: var(--border-strong); stroke-width: 1; }
+.b-puls-skygge { fill: none; stroke: var(--accent); stroke-width: 9; stroke-linejoin: round; stroke-linecap: round; opacity: .22; filter: url(#b-gloed); }
+.b-puls { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
+.b-puls-prik { fill: var(--surface); stroke: var(--accent); stroke-width: 2.5; }
+.b-kilde { cursor: pointer; outline: none; }
+.b-kilde:focus-visible .b-kerne { stroke: var(--info); stroke-width: 3; }
+.b-dim { opacity: .28; }
+.b-ring { fill: none; stroke: var(--data-1); stroke-width: 1.6; transform-box: fill-box; transform-origin: center; opacity: 0; }
+.b-klon { fill: none; stroke: var(--data-2); stroke-width: 1.6; stroke-dasharray: 3 4; }
+.b-draabe { fill: var(--data-3); stroke: var(--surface); stroke-width: 1; transform-box: fill-box; transform-origin: center; opacity: 0; }
+.b-kerne { fill: var(--data-1); stroke: var(--surface); stroke-width: 2; }
+.b-navn { fill: var(--text); font: 600 12px var(--font-sans); paint-order: stroke; stroke: var(--surface); stroke-width: 4; stroke-linejoin: round; }
+.b-forkl { display: flex; flex-direction: column; gap: var(--space-2); font-size: var(--small-size); line-height: 18px; color: var(--text-muted); }
+.b-forkl p { margin: 0; }
+.b-skala { list-style: none; margin: var(--space-1) 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); color: var(--data-label); font-variant-numeric: tabular-nums; }
+.b-skala li { display: inline-flex; align-items: center; gap: var(--space-1); }
+.b-prove { width: 14px; height: 14px; flex: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .b-ring { animation: b-ring var(--dur, 5s) linear infinite; animation-delay: var(--delay, 0s); }
+  .b-draabe { animation: b-draabe 10s ease-in infinite; animation-delay: var(--delay, 0s); }
+  .b-puls { animation: b-tegn 1.6s ease-out both; }
+  @keyframes b-ring { from { transform: scale(.1); opacity: .85; } 70% { opacity: .35; } to { transform: scale(1); opacity: 0; } }
+  @keyframes b-draabe { 0% { transform: scale(3.4); opacity: 0; } 6% { transform: scale(1); opacity: 1; } 22% { transform: scale(1); opacity: 1; } 30%, 100% { transform: scale(.3); opacity: 0; } }
+  @keyframes b-tegn { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+}
+/* Still picture: every ring is shown at its place, every drop is visible. */
+@media (prefers-reduced-motion: reduce) {
+  .b-ring { opacity: .55; transform: scale(var(--rest, 1)); }
+  .b-draabe { opacity: 1; }
+}
+
+/* Below the kit's own minimum: no navigation pane, a list to choose from
+   instead, and one column. */
+@media (max-width: 899px) {
+  .nav { display: none; }
+  .mimir-smal { display: block; }
+  .mimir-side > h1 { font-size: var(--h1-size); line-height: var(--h1-line); }
+  .mimir-to, .mimir-broend, .mimir-hver { grid-template-columns: minmax(0, 1fr); }
+  .titel small { display: none; }
+  .titel b { overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 0 1 auto; }
+  .cmd-faner { overflow-x: auto; gap: 0; padding-left: var(--space-1); padding-right: var(--space-1); }
+  .cmd-faner > .tip-plads { flex: none; }
+  /* The tabs have to fit a phone: less air around each. */
+  .cmd-faner .vfane { padding-left: var(--space-2); padding-right: var(--space-2); }
+  .cmd-faner > .hoejre { margin-left: 0; }
+  .fodl { height: auto; min-height: 26px; flex-wrap: wrap; row-gap: 2px; padding-top: 4px; padding-bottom: 4px; }
+  .fodl .h { margin-left: 0; flex-wrap: wrap; row-gap: 2px; }
+  .modal { max-width: calc(100vw - 24px); }
+}
+
+/* Lock screen: remembering, and the front page a visitor meets on GitHub Pages */
+.mimir-laas .hj { margin: 0; color: var(--text-muted); font-size: var(--small-size); line-height: var(--small-line); }
+.mimir-husk { display: flex; flex-direction: column; gap: var(--space-2); padding-left: var(--space-6); }
+.mimir-husk[hidden], .mimir-laas [hidden] { display: none; }
+.mimir-forside { max-width: 560px; }
+.mimir-forside.bred { max-width: 1100px; }
+.mimir-forside.bred > h1, .mimir-forside.bred > p, .mimir-forside.bred > .tabel-rul { max-width: 560px; }
+
+/* A value to copy, with its button */
+.mimir-kode { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
+.mimir-kode .k-linje { display: flex; gap: var(--space-2); align-items: flex-start; }
+.mimir-kode code { flex: 1; min-width: 0; padding: var(--space-2) var(--space-3); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); font: var(--mono-size)/var(--mono-line) var(--mono-family); overflow-wrap: anywhere; }
+.mimir-koder { display: flex; flex-direction: column; gap: var(--space-3); }
+.mimir-koder .hj { margin: 0; color: var(--text-muted); }
+.mimir-badge { display: flex; flex-direction: column; gap: var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--border); }
+
+/* Phone dialog. The code is always dark on light, in both themes, so a camera can read it. */
+.mimir-tlf { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: var(--space-6); align-items: start; }
+.mimir-qr { display: block; width: 100%; height: auto; border-radius: var(--radius-md); shape-rendering: crispEdges; }
+.mimir-qr .q-lys { fill: var(--rail-strong); }
+.mimir-qr .q-moerk { fill: var(--rail); }
+.mimir-tlf-tekst { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
+.mimir-tlf-tekst ol { margin: 0; padding-left: var(--space-6); display: flex; flex-direction: column; gap: var(--space-1); }
+.mimir-tlf-tekst .hj { margin: 0; color: var(--text-muted); }
+@media (max-width: 899px) {
+  .mimir-tlf { grid-template-columns: minmax(0, 1fr); }
+  .mimir-qr { max-width: 220px; margin: 0 auto; }
+  .mimir-kode .k-linje { flex-direction: column; }
+}

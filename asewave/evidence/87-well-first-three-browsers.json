@@ -1,0 +1,110 @@
+[
+ {
+  "browser": "chrome",
+  "view": "desktop",
+  "landsOn": "well",
+  "hash": "",
+  "cards": 3,
+  "charts": 3,
+  "titles": [
+   "lantern",
+   "quill-notes",
+   "tidepool"
+  ],
+  "overflowX": false,
+  "cardsWhenOnePicked": 1,
+  "headingWhenOnePicked": "This repository",
+  "detailsLeadsTo": "#traffic",
+  "trafficChart": 1,
+  "frontHasCards": 0,
+  "errors": []
+ },
+ {
+  "browser": "chrome",
+  "view": "phone",
+  "landsOn": "well",
+  "hash": "",
+  "cards": 3,
+  "charts": 3,
+  "titles": [
+   "lantern",
+   "quill-notes",
+   "tidepool"
+  ],
+  "overflowX": false,
+  "frontHasCards": 0,
+  "errors": []
+ },
+ {
+  "browser": "firefox",
+  "view": "desktop",
+  "landsOn": "well",
+  "hash": "",
+  "cards": 3,
+  "charts": 3,
+  "titles": [
+   "lantern",
+   "quill-notes",
+   "tidepool"
+  ],
+  "overflowX": false,
+  "cardsWhenOnePicked": 1,
+  "headingWhenOnePicked": "This repository",
+  "detailsLeadsTo": "#traffic",
+  "trafficChart": 1,
+  "frontHasCards": 0,
+  "errors": []
+ },
+ {
+  "browser": "firefox",
+  "view": "phone",
+  "landsOn": "well",
+  "hash": "",
+  "cards": 3,
+  "charts": 3,
+  "titles": [
+   "lantern",
+   "quill-notes",
+   "tidepool"
+  ],
+  "overflowX": false,
+  "frontHasCards": 0,
+  "errors": []
+ },
+ {
+  "browser": "webkit",
+  "view": "desktop",
+  "landsOn": "well",
+  "hash": "",
+  "cards": 3,
+  "charts": 3,
+  "titles": [
+   "lantern",
+   "quill-notes",
+   "tidepool"
+  ],
+  "overflowX": false,
+  "cardsWhenOnePicked": 1,
+  "headingWhenOnePicked": "This repository",
+  "detailsLeadsTo": "#traffic",
+  "trafficChart": 1,
+  "frontHasCards": 0,
+  "errors": []
+ },
+ {
+  "browser": "webkit",
+  "view": "phone",
+  "landsOn": "well",
+  "hash": "",
+  "cards": 3,
+  "charts": 3,
+  "titles": [
+   "lantern",
+   "quill-notes",
+   "tidepool"
+  ],
+  "overflowX": false,
+  "frontHasCards": 0,
+  "errors": []
+ }
+]

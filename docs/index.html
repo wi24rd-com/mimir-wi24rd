@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-tema="system" data-kit-praefiks="mimir">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; manifest-src 'self'; connect-src 'self' https://raw.githubusercontent.com https://api.github.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Wi24rd Mimir</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- Lets a phone put Mimir on its home screen and open it in full screen. -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Mimir">
+<meta name="theme-color" content="#0B1F33">
+<!-- Wi24rd UI Kit 2, copied unchanged into kit/. Mimir's own look is in app.css, after the kit's. -->
+<link rel="stylesheet" href="kit/tokens.css">
+<link rel="stylesheet" href="kit/kit.css">
+<link rel="stylesheet" href="app.css">
+<script src="kit/tema.js"></script>
+<script src="kit/sprogmotor.js" defer></script>
+<script src="kit/kit.js" defer></script>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<div id="app"><noscript>This page needs JavaScript to open and draw your figures.</noscript></div>
+</body>
+</html>

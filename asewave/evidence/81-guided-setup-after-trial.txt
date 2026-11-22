@@ -1,0 +1,65 @@
+$ node src/setup.mjs   in a scratch copy, with stand-ins for gh and "git push". Answers: "all", Enter, Enter, "1234", "n".
+
+Wi24rd Mimir setup
+  Data repository : octo/mimir (public)
+
+Question 1 of 3: which repositories should Mimir follow?
+
+  1  octo/lantern
+  2  octo/quill-notes
+  3  octo/tidepool  (private)
+
+  octo/mimir itself is left out. You can change the list later in mimir.json.
+
+Numbers with spaces between them (1 3 5), a span (2-4), or "all":
+  octo/mimir is public, and mimir.json in it lists the repositories by name.
+  The names of these private repositories would be visible to everyone:
+
+      octo/tidepool
+
+  1  Leave the private ones out (recommended)
+  2  Follow them anyway, with their names in the open
+  3  Stop
+
+Number [1]:
+  Following 2: octo/lantern, octo/quill-notes
+
+Question 2 of 3: how should the figures be stored?
+
+  1  encrypted  The figures are stored encrypted. Only your passphrase opens them. (recommended)
+  2  public     The figures are stored in the open. Anyone can read all of them.
+
+Number [1]:
+Question 3 of 3: should any figures be shown in the open? Nothing is, unless you choose it.
+
+  1  Downloads in total, as a badge
+  2  Stars in total, as a badge
+  3  Downloads per repository, as one badge each
+  4  The Well on the front page. This publishes views and clones, which GitHub otherwise shows to you only
+
+Numbers with spaces between them (1 2 4), or just Enter for none:
+This becomes mimir.json:
+
+    {
+      "version": 1,
+      "visibility": "encrypted",
+      "repos": [
+        "octo/lantern",
+        "octo/quill-notes"
+      ],
+      "public_badges": [
+        "total_downloads",
+        "stars",
+        "repo_downloads",
+        "well"
+      ]
+    }
+
+Save it, commit and push? [Y/n]
+Setup stopped: Stopped. Nothing was changed.
+
+To start it again:
+  cd "<the folder of the copy>" && node src/setup.mjs
+
+--- after the "n": git status --short, and mimir.json still holds the example ---
+1

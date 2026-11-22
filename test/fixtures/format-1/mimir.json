@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "visibility": "encrypted",
+  "repos": [
+    "example/lantern",
+    "example/quill-notes",
+    "example/tidepool"
+  ],
+  "public_badges": [
+    "total_downloads",
+    "stars",
+    "repo_downloads",
+    "well"
+  ]
+}

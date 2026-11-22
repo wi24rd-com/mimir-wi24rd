@@ -1,0 +1,3 @@
+$ node src/update.mjs --check   (against https://github.com/wi24rd-com/mimir.git, which has no tags yet)
+Mimir 0.1.0: no version has been released yet.
+exit code: 0

@@ -1,0 +1,32 @@
+{
+ "lang": "en",
+ "unlockTitle": "Open your figures",
+ "wrong": "That passphrase does not open the file. Check for a missing character and try again.",
+ "stillLocked": true,
+ "unlockMs": 139,
+ "headline": "699 views and 88 clones in the last 14 days.",
+ "storage": "{\"local\":{},\"session\":{}}",
+ "fonts": [
+  "Inter",
+  "JetBrains Mono"
+ ],
+ "accent": "#35D6B3",
+ "markColor": "rgb(53, 214, 179)",
+ "repoTitle": "example/lantern",
+ "treeCurrent": "lantern499",
+ "tooltip": "14 Nov | Views | 20 (8 unique) | Clones | 2 (1 unique)",
+ "line1": "rgb(111, 165, 255)",
+ "keyboardTip": "20 Nov",
+ "periodChecked": "Everything",
+ "langAfter": "da",
+ "daHeading": "Visninger og kloninger pr. dag",
+ "storageAfterLang": "{\"mimir-sprog\":\"da\"}",
+ "afterRefreshStillOpen": true,
+ "settingsFile": "{ \"version\": 1, \"visibility\": \"encrypted\", \"repos\": [ \"wi24rd-com/huginn-muninn\"",
+ "invalid": "Ikke gyldig endnu: \"not a repo\" is not a valid \"owner/name\"",
+ "copyDisabled": true,
+ "warn": "Skifter du fra krypteret til en åben tilstand, offentliggøres alt, der er indsamlet indtil nu. Indsamlingen afviser skiftet, indtil du starter én kørsel med MIMIR_MIGRATE=1.",
+ "lockedAgain": true,
+ "problems": [],
+ "external": []
+}

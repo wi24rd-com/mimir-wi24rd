@@ -1,0 +1,176 @@
+[
+ {
+  "browser": "chrome",
+  "view": "desktop",
+  "order": [
+   "headline",
+   "sentence",
+   "well",
+   "heading",
+   "boxes",
+   "note"
+  ],
+  "tabs": [
+   "Overview",
+   "Traffic",
+   "Downloads",
+   "Sources"
+  ],
+  "stones": 14,
+  "boxes": 3,
+  "charts": 3,
+  "overflowX": false,
+  "oldWellAddressShows": "overview",
+  "traffic": true,
+  "downloads": true,
+  "sources": true,
+  "frontStones": 14,
+  "frontBoxes": 0,
+  "errors": []
+ },
+ {
+  "browser": "chrome",
+  "view": "phone",
+  "order": [
+   "headline",
+   "sentence",
+   "well",
+   "heading",
+   "boxes",
+   "note"
+  ],
+  "tabs": [
+   "Overview",
+   "Traffic",
+   "Downloads",
+   "Sources"
+  ],
+  "stones": 14,
+  "boxes": 3,
+  "charts": 3,
+  "overflowX": false,
+  "oldWellAddressShows": "overview",
+  "traffic": true,
+  "downloads": true,
+  "sources": true,
+  "frontStones": 14,
+  "frontBoxes": 0,
+  "errors": []
+ },
+ {
+  "browser": "firefox",
+  "view": "desktop",
+  "order": [
+   "headline",
+   "sentence",
+   "well",
+   "heading",
+   "boxes",
+   "note"
+  ],
+  "tabs": [
+   "Overview",
+   "Traffic",
+   "Downloads",
+   "Sources"
+  ],
+  "stones": 14,
+  "boxes": 3,
+  "charts": 3,
+  "overflowX": false,
+  "oldWellAddressShows": "overview",
+  "traffic": true,
+  "downloads": true,
+  "sources": true,
+  "frontStones": 14,
+  "frontBoxes": 0,
+  "errors": []
+ },
+ {
+  "browser": "firefox",
+  "view": "phone",
+  "order": [
+   "headline",
+   "sentence",
+   "well",
+   "heading",
+   "boxes",
+   "note"
+  ],
+  "tabs": [
+   "Overview",
+   "Traffic",
+   "Downloads",
+   "Sources"
+  ],
+  "stones": 14,
+  "boxes": 3,
+  "charts": 3,
+  "overflowX": false,
+  "oldWellAddressShows": "overview",
+  "traffic": true,
+  "downloads": true,
+  "sources": true,
+  "frontStones": 14,
+  "frontBoxes": 0,
+  "errors": []
+ },
+ {
+  "browser": "webkit",
+  "view": "desktop",
+  "order": [
+   "headline",
+   "sentence",
+   "well",
+   "heading",
+   "boxes",
+   "note"
+  ],
+  "tabs": [
+   "Overview",
+   "Traffic",
+   "Downloads",
+   "Sources"
+  ],
+  "stones": 14,
+  "boxes": 3,
+  "charts": 3,
+  "overflowX": false,
+  "oldWellAddressShows": "overview",
+  "traffic": true,
+  "downloads": true,
+  "sources": true,
+  "frontStones": 14,
+  "frontBoxes": 0,
+  "errors": []
+ },
+ {
+  "browser": "webkit",
+  "view": "phone",
+  "order": [
+   "headline",
+   "sentence",
+   "well",
+   "heading",
+   "boxes",
+   "note"
+  ],
+  "tabs": [
+   "Overview",
+   "Traffic",
+   "Downloads",
+   "Sources"
+  ],
+  "stones": 14,
+  "boxes": 3,
+  "charts": 3,
+  "overflowX": false,
+  "oldWellAddressShows": "overview",
+  "traffic": true,
+  "downloads": true,
+  "sources": true,
+  "frontStones": 14,
+  "frontBoxes": 0,
+  "errors": []
+ }
+]

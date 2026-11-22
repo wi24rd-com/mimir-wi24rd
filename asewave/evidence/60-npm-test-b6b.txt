@@ -1,0 +1,644 @@
+
+> wi24rd-mimir@0.1.0 test
+> node --test
+
+TAP version 13
+# Subtest: a full run fills every section and sends the token only as a header
+ok 1 - a full run fills every section and sends the token only as a header
+  ---
+  duration_ms: 17.743388
+  type: 'test'
+  ...
+# Subtest: when traffic is refused, downloads are still kept and each failure is reported
+ok 2 - when traffic is refused, downloads are still kept and each failure is reported
+  ---
+  duration_ms: 2.562327
+  type: 'test'
+  ...
+# Subtest: a failed run does not erase figures collected earlier
+ok 3 - a failed run does not erase figures collected earlier
+  ---
+  duration_ms: 1.495338
+  type: 'test'
+  ...
+# Subtest: server errors are retried; a later success counts
+ok 4 - server errors are retried; a later success counts
+  ---
+  duration_ms: 7.221144
+  type: 'test'
+  ...
+# Subtest: only the figures the owner listed are written, and dropped ones are removed
+ok 5 - only the figures the owner listed are written, and dropped ones are removed
+  ---
+  duration_ms: 3.984628
+  type: 'test'
+  ...
+# Subtest: a repo the app is not installed on is named, and its traffic is not requested
+ok 6 - a repo the app is not installed on is named, and its traffic is not requested
+  ---
+  duration_ms: 0.706235
+  type: 'test'
+  ...
+# Subtest: when the installation list cannot be read, every repo is still tried
+ok 7 - when the installation list cannot be read, every repo is still tried
+  ---
+  duration_ms: 1.034973
+  type: 'test'
+  ...
+# Subtest: a valid config yields the owner and defaults
+ok 8 - a valid config yields the owner and defaults
+  ---
+  duration_ms: 2.127014
+  type: 'test'
+  ...
+# Subtest: rejected: unknown visibility
+ok 9 - rejected: unknown visibility
+  ---
+  duration_ms: 0.367884
+  type: 'test'
+  ...
+# Subtest: rejected: no repos
+ok 10 - rejected: no repos
+  ---
+  duration_ms: 0.063961
+  type: 'test'
+  ...
+# Subtest: rejected: repo without owner
+ok 11 - rejected: repo without owner
+  ---
+  duration_ms: 0.069557
+  type: 'test'
+  ...
+# Subtest: rejected: shell characters in a repo name
+ok 12 - rejected: shell characters in a repo name
+  ---
+  duration_ms: 0.057671
+  type: 'test'
+  ...
+# Subtest: rejected: path traversal in a repo name
+ok 13 - rejected: path traversal in a repo name
+  ---
+  duration_ms: 0.064785
+  type: 'test'
+  ...
+# Subtest: rejected: duplicate repo
+ok 14 - rejected: duplicate repo
+  ---
+  duration_ms: 0.049143
+  type: 'test'
+  ...
+# Subtest: rejected: two owners
+ok 15 - rejected: two owners
+  ---
+  duration_ms: 0.053005
+  type: 'test'
+  ...
+# Subtest: rejected: unknown badge
+ok 16 - rejected: unknown badge
+  ---
+  duration_ms: 0.208747
+  type: 'test'
+  ...
+# Subtest: rejected: wrong version
+ok 17 - rejected: wrong version
+  ---
+  duration_ms: 0.19792
+  type: 'test'
+  ...
+# Subtest: the mimir.json that ships with Mimir is the example, and setup refuses it
+ok 18 - the mimir.json that ships with Mimir is the example, and setup refuses it
+  ---
+  duration_ms: 0.625916
+  type: 'test'
+  ...
+# Subtest: round trip returns the same data
+ok 19 - round trip returns the same data
+  ---
+  duration_ms: 26.849707
+  type: 'test'
+  ...
+# Subtest: the envelope does not contain the data in readable form
+ok 20 - the envelope does not contain the data in readable form
+  ---
+  duration_ms: 12.612507
+  type: 'test'
+  ...
+# Subtest: a wrong passphrase is rejected
+ok 21 - a wrong passphrase is rejected
+  ---
+  duration_ms: 25.421624
+  type: 'test'
+  ...
+# Subtest: a changed file is rejected
+ok 22 - a changed file is rejected
+  ---
+  duration_ms: 26.15002
+  type: 'test'
+  ...
+# Subtest: a short passphrase is refused
+ok 23 - a short passphrase is refused
+  ---
+  duration_ms: 0.14876
+  type: 'test'
+  ...
+# Subtest: two encryptions of the same data differ (fresh salt and nonce)
+ok 24 - two encryptions of the same data differ (fresh salt and nonce)
+  ---
+  duration_ms: 25.236658
+  type: 'test'
+  ...
+# Subtest: the default setting is 600,000 PBKDF2 rounds
+ok 25 - the default setting is 600,000 PBKDF2 rounds
+  ---
+  duration_ms: 73.393312
+  type: 'test'
+  ...
+# Subtest: a browser can open it: decrypt with WebCrypto only
+ok 26 - a browser can open it: decrypt with WebCrypto only
+  ---
+  duration_ms: 32.884598
+  type: 'test'
+  ...
+# Subtest: generated passphrases are long, grouped and not repeated
+ok 27 - generated passphrases are long, grouped and not repeated
+  ---
+  duration_ms: 16.306143
+  type: 'test'
+  ...
+# Subtest: the kit copy is version 2.8.0
+ok 28 - the kit copy is version 2.8.0
+  ---
+  duration_ms: 0.522859
+  type: 'test'
+  ...
+# Subtest: no file in the kit copy has been edited
+ok 29 - no file in the kit copy has been edited
+  ---
+  duration_ms: 1.324039
+  type: 'test'
+  ...
+# Subtest: the kit copy holds no extra files, and its licences are with it
+ok 30 - the kit copy holds no extra files, and its licences are with it
+  ---
+  duration_ms: 0.915675
+  type: 'test'
+  ...
+# Subtest: the page loads the kit before Mimir's own files, and nothing from another site
+ok 31 - the page loads the kit before Mimir's own files, and nothing from another site
+  ---
+  duration_ms: 0.307865
+  type: 'test'
+  ...
+# Subtest: Mimir's own stylesheet uses the kit's tokens, never colour codes
+ok 32 - Mimir's own stylesheet uses the kit's tokens, never colour codes
+  ---
+  duration_ms: 0.263296
+  type: 'test'
+  ...
+# Subtest: every token Mimir's own stylesheet uses exists
+ok 33 - every token Mimir's own stylesheet uses exists
+  ---
+  duration_ms: 1.616955
+  type: 'test'
+  ...
+# Subtest: daily figures: a later, higher count replaces a partial day; a lower one never does
+ok 34 - daily figures: a later, higher count replaces a partial day; a lower one never does
+  ---
+  duration_ms: 1.254366
+  type: 'test'
+  ...
+# Subtest: daily figures: running the same answer twice changes nothing
+ok 35 - daily figures: running the same answer twice changes nothing
+  ---
+  duration_ms: 0.203667
+  type: 'test'
+  ...
+# Subtest: daily figures: days that fell out of the 14-day window are kept
+ok 36 - daily figures: days that fell out of the 14-day window are kept
+  ---
+  duration_ms: 0.980503
+  type: 'test'
+  ...
+# Subtest: daily figures: malformed entries are ignored
+ok 37 - daily figures: malformed entries are ignored
+  ---
+  duration_ms: 0.278867
+  type: 'test'
+  ...
+# Subtest: downloads: a point is added only when the counter changed
+ok 38 - downloads: a point is added only when the counter changed
+  ---
+  duration_ms: 0.298967
+  type: 'test'
+  ...
+# Subtest: downloads: draft releases are left out
+ok 39 - downloads: draft releases are left out
+  ---
+  duration_ms: 0.088913
+  type: 'test'
+  ...
+# Subtest: snapshots: top lists are stored per collection day and capped at ten
+ok 40 - snapshots: top lists are stored per collection day and capped at ten
+  ---
+  duration_ms: 0.293591
+  type: 'test'
+  ...
+# Subtest: meta: unchanged figures do not add a new day
+ok 41 - meta: unchanged figures do not add a new day
+  ---
+  duration_ms: 0.139624
+  type: 'test'
+  ...
+# Subtest: totals: latest download counters and latest stars are summed across repos
+ok 42 - totals: latest download counters and latest stars are summed across repos
+  ---
+  duration_ms: 0.320048
+  type: 'test'
+  ...
+# Subtest: nothing is public unless it is chosen
+ok 43 - nothing is public unless it is chosen
+  ---
+  duration_ms: 1.206881
+  type: 'test'
+  ...
+# Subtest: the totals agree with the collector, and there is one figure per repository
+ok 44 - the totals agree with the collector, and there is one figure per repository
+  ---
+  duration_ms: 0.488856
+  type: 'test'
+  ...
+# Subtest: a repository is found whatever case mimir.json uses
+ok 45 - a repository is found whatever case mimir.json uses
+  ---
+  duration_ms: 0.285617
+  type: 'test'
+  ...
+# Subtest: the badge code points at the data branch and is safe to paste
+ok 46 - the badge code points at the data branch and is safe to paste
+  ---
+  duration_ms: 0.273783
+  type: 'test'
+  ...
+# Subtest: the Well is published only when chosen, and holds nothing but what it is drawn from
+ok 47 - the Well is published only when chosen, and holds nothing but what it is drawn from
+  ---
+  duration_ms: 10.160311
+  type: 'test'
+  ...
+# Subtest: the published Well covers only the repositories in mimir.json
+ok 48 - the published Well covers only the repositories in mimir.json
+  ---
+  duration_ms: 1.035397
+  type: 'test'
+  ...
+# Subtest: error correction matches the published "HELLO WORLD" 1-M example
+ok 49 - error correction matches the published "HELLO WORLD" 1-M example
+  ---
+  duration_ms: 2.218149
+  type: 'test'
+  ...
+# Subtest: format and version information match the standard tables
+ok 50 - format and version information match the standard tables
+  ---
+  duration_ms: 0.378086
+  type: 'test'
+  ...
+# Subtest: the smallest version that fits is chosen
+ok 51 - the smallest version that fits is chosen
+  ---
+  duration_ms: 9.079523
+  type: 'test'
+  ...
+# Subtest: the grid has the fixed patterns in place
+ok 52 - the grid has the fixed patterns in place
+  ---
+  duration_ms: 4.800435
+  type: 'test'
+  ...
+# Subtest: the mask with the lowest penalty is used, and the result is stable
+ok 53 - the mask with the lowest penalty is used, and the result is stable
+  ---
+  duration_ms: 24.276972
+  type: 'test'
+  ...
+# Subtest: the SVG path has one square per dark module and a quiet zone
+ok 54 - the SVG path has one square per dark module and a quiet zone
+  ---
+  duration_ms: 7.150688
+  type: 'test'
+  ...
+# Subtest: a passphrase sealed under a passkey secret opens with the same secret only
+ok 55 - a passphrase sealed under a passkey secret opens with the same secret only
+  ---
+  duration_ms: 9.945031
+  type: 'test'
+  ...
+# Subtest: what is stored does not contain the passphrase, and changes every time
+ok 56 - what is stored does not contain the passphrase, and changes every time
+  ---
+  duration_ms: 2.181055
+  type: 'test'
+  ...
+# Subtest: a changed stored value is refused
+ok 57 - a changed stored value is refused
+  ---
+  duration_ms: 3.763909
+  type: 'test'
+  ...
+# Subtest: the key cannot be read back out
+ok 58 - the key cannot be read back out
+  ---
+  duration_ms: 1.29517
+  type: 'test'
+  ...
+# Subtest: the manifest asks for read-only Administration and nothing else
+ok 59 - the manifest asks for read-only Administration and nothing else
+  ---
+  duration_ms: 1.267514
+  type: 'test'
+  ...
+# Subtest: the start page posts the manifest to GitHub with a state value
+ok 60 - the start page posts the manifest to GitHub with a state value
+  ---
+  duration_ms: 14.559847
+  type: 'test'
+  ...
+# Subtest: a callback with the right state exchanges the code and returns the app
+ok 61 - a callback with the right state exchanges the code and returns the app
+  ---
+  duration_ms: 6.564716
+  type: 'test'
+  ...
+# Subtest: a callback with a wrong state, a bad code or a second use is refused
+ok 62 - a callback with a wrong state, a bad code or a second use is refused
+  ---
+  duration_ms: 7.845275
+  type: 'test'
+  ...
+# Subtest: requests with a foreign Host header are refused
+ok 63 - requests with a foreign Host header are refused
+  ---
+  duration_ms: 1.836786
+  type: 'test'
+  ...
+# Subtest: a refusal from GitHub is reported and no app is returned
+ok 64 - a refusal from GitHub is reported and no app is returned
+  ---
+  duration_ms: 2.654015
+  type: 'test'
+  ...
+# Subtest: public mode: state and raw answers are readable JSON
+ok 65 - public mode: state and raw answers are readable JSON
+  ---
+  duration_ms: 1.988748
+  type: 'test'
+  ...
+# Subtest: encrypted mode: nothing on disk names the repository
+ok 66 - encrypted mode: nothing on disk names the repository
+  ---
+  duration_ms: 282.538685
+  type: 'test'
+  ...
+# Subtest: encrypted mode without a passphrase is refused
+ok 67 - encrypted mode without a passphrase is refused
+  ---
+  duration_ms: 1.752749
+  type: 'test'
+  ...
+# Subtest: switching open data to encrypted is refused unless asked for
+ok 68 - switching open data to encrypted is refused unless asked for
+  ---
+  duration_ms: 93.753625
+  type: 'test'
+  ...
+# Subtest: switching encrypted data to open is refused unless asked for
+ok 69 - switching encrypted data to open is refused unless asked for
+  ---
+  duration_ms: 186.014432
+  type: 'test'
+  ...
+# Subtest: data from a newer schema is not overwritten
+ok 70 - data from a newer schema is not overwritten
+  ---
+  duration_ms: 0.540708
+  type: 'test'
+  ...
+# Subtest: only days inside the period are summed
+ok 71 - only days inside the period are summed
+  ---
+  duration_ms: 1.443865
+  type: 'test'
+  ...
+# Subtest: the series has one entry per day and marks days without a figure
+ok 72 - the series has one entry per day and marks days without a figure
+  ---
+  duration_ms: 0.591195
+  type: 'test'
+  ...
+# Subtest: download growth is measured from the counter just before the period
+ok 73 - download growth is measured from the counter just before the period
+  ---
+  duration_ms: 0.239082
+  type: 'test'
+  ...
+# Subtest: a file first seen inside the period is counted from that first sighting, and says so
+ok 74 - a file first seen inside the period is counted from that first sighting, and says so
+  ---
+  duration_ms: 0.174902
+  type: 'test'
+  ...
+# Subtest: stars and referrers come from the latest snapshot
+ok 75 - stars and referrers come from the latest snapshot
+  ---
+  duration_ms: 0.115405
+  type: 'test'
+  ...
+# Subtest: dayRange includes both ends
+ok 76 - dayRange includes both ends
+  ---
+  duration_ms: 0.070638
+  type: 'test'
+  ...
+# Subtest: health: fresh within 36 hours, stopped after
+ok 77 - health: fresh within 36 hours, stopped after
+  ---
+  duration_ms: 0.308115
+  type: 'test'
+  ...
+# Subtest: the summary sentences name the busiest repo, the top source and the top file in both languages
+ok 78 - the summary sentences name the busiest repo, the top source and the top file in both languages
+  ---
+  duration_ms: 12.910199
+  type: 'test'
+  ...
+# Subtest: demo figures are the same on every run and counters never go down
+ok 79 - demo figures are the same on every run and counters never go down
+  ---
+  duration_ms: 4.633439
+  type: 'test'
+  ...
+# Subtest: English and Danish have exactly the same entries
+ok 80 - English and Danish have exactly the same entries
+  ---
+  duration_ms: 0.397948
+  type: 'test'
+  ...
+# Subtest: the busiest single day is reported for unique visitors
+ok 81 - the busiest single day is reported for unique visitors
+  ---
+  duration_ms: 0.240383
+  type: 'test'
+  ...
+# Subtest: when every file was first seen inside the period, the text says since when downloads are counted
+ok 82 - when every file was first seen inside the period, the text says since when downloads are counted
+  ---
+  duration_ms: 1.732313
+  type: 'test'
+  ...
+# Subtest: the kit's language engine gets the same plain texts in both languages
+ok 83 - the kit's language engine gets the same plain texts in both languages
+  ---
+  duration_ms: 1.296035
+  type: 'test'
+  ...
+# Subtest: several repositories: counts are added per day, unique visitors are left out
+ok 84 - several repositories: counts are added per day, unique visitors are left out
+  ---
+  duration_ms: 0.171273
+  type: 'test'
+  ...
+# Subtest: referrers across repositories are added and sorted, most visits first
+ok 85 - referrers across repositories are added and sorted, most visits first
+  ---
+  duration_ms: 1.839181
+  type: 'test'
+  ...
+# Subtest: the version shown in the footer is the one in package.json
+ok 86 - the version shown in the footer is the one in package.json
+  ---
+  duration_ms: 0.949938
+  type: 'test'
+  ...
+# Subtest: the browser code opens what the collector encrypted
+ok 87 - the browser code opens what the collector encrypted
+  ---
+  duration_ms: 42.851028
+  type: 'test'
+  ...
+# Subtest: the browser code reports a wrong passphrase as such
+ok 88 - the browser code reports a wrong passphrase as such
+  ---
+  duration_ms: 28.745313
+  type: 'test'
+  ...
+# Subtest: dashboard server: serves the page with a strict policy and no caching
+ok 89 - dashboard server: serves the page with a strict policy and no caching
+  ---
+  duration_ms: 19.953443
+  type: 'test'
+  ...
+# Subtest: dashboard server: nothing outside the dashboard folder can be read
+ok 90 - dashboard server: nothing outside the dashboard folder can be read
+  ---
+  duration_ms: 8.080847
+  type: 'test'
+  ...
+# Subtest: dashboard server: figures, settings and source are served; a missing data branch is explained
+ok 91 - dashboard server: figures, settings and source are served; a missing data branch is explained
+  ---
+  duration_ms: 3.904505
+  type: 'test'
+  ...
+# Subtest: terminal view: arguments
+ok 92 - terminal view: arguments
+  ---
+  duration_ms: 0.338493
+  type: 'test'
+  ...
+# Subtest: terminal view: shows the sentences, one row per repo and one per file
+ok 93 - terminal view: shows the sentences, one row per repo and one per file
+  ---
+  duration_ms: 19.313209
+  type: 'test'
+  ...
+# Subtest: terminal view: warns when collection has stopped or was incomplete
+ok 94 - terminal view: warns when collection has stopped or was incomplete
+  ---
+  duration_ms: 2.820036
+  type: 'test'
+  ...
+# Subtest: figures are read from the data branch of a real git clone, encrypted and open
+ok 95 - figures are read from the data branch of a real git clone, encrypted and open
+  ---
+  duration_ms: 568.120012
+  type: 'test'
+  ...
+# Subtest: terminal view: files first seen inside the period are marked and explained
+ok 96 - terminal view: files first seen inside the period are marked and explained
+  ---
+  duration_ms: 6.316898
+  type: 'test'
+  ...
+# Subtest: scale: five whole-number steps that cover 1 to the maximum without gaps
+ok 97 - scale: five whole-number steps that cover 1 to the maximum without gaps
+  ---
+  duration_ms: 0.963852
+  type: 'test'
+  ...
+# Subtest: scale: a small maximum gives fewer steps, ending on the strongest
+ok 98 - scale: a small maximum gives fewer steps, ending on the strongest
+  ---
+  duration_ms: 0.155588
+  type: 'test'
+  ...
+# Subtest: scale: every count lands in the step whose range holds it
+ok 99 - scale: every count lands in the step whose range holds it
+  ---
+  duration_ms: 1.203631
+  type: 'test'
+  ...
+# Subtest: ripples: none without views, one to five otherwise, never fewer for more views
+ok 100 - ripples: none without views, one to five otherwise, never fewer for more views
+  ---
+  duration_ms: 0.197906
+  type: 'test'
+  ...
+# Subtest: drops: one per download, at most twelve
+ok 101 - drops: one per download, at most twelve
+  ---
+  duration_ms: 0.09542
+  type: 'test'
+  ...
+# Subtest: rim: one stone per day, clockwise from the top, with the level of that day
+ok 102 - rim: one stone per day, clockwise from the top, with the level of that day
+  ---
+  duration_ms: 0.431612
+  type: 'test'
+  ...
+# Subtest: arc: a stone wider than half the circle is drawn the long way round
+ok 103 - arc: a stone wider than half the circle is drawn the long way round
+  ---
+  duration_ms: 0.122325
+  type: 'test'
+  ...
+# Subtest: sources: one repository sits in the middle, several are spread evenly on a circle
+ok 104 - sources: one repository sits in the middle, several are spread evenly on a circle
+  ---
+  duration_ms: 0.183422
+  type: 'test'
+  ...
+# Subtest: pulse: the busiest day reaches the full height, unknown days break the line
+ok 105 - pulse: the busiest day reaches the full height, unknown days break the line
+  ---
+  duration_ms: 0.220593
+  type: 'test'
+  ...
+1..105
+# tests 105
+# suites 0
+# pass 105
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2345.333527

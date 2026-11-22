@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><!-- The Mimir mark (assets/mimir-mark.svg) in the program's teal on its navy (the kit's --accent-on-rail on --rail), so it stays visible on light and dark browser chrome. --><rect width="1024" height="1024" rx="224" fill="#0B1F33"/><g transform="translate(112 112) scale(0.78125)"><path fill="#35D6B3" d="M144 454 C144 559 309 644 512 644 C715 644 880 559 880 454 L880 635 C880 813 144 813 144 635 Z"/>
+<path fill="#6BE5CA" fill-rule="evenodd" d="M880 454 A368 190 0 1 1 144 454 A368 190 0 1 1 880 454 Z M800 454 A288 135 0 1 0 224 454 A288 135 0 1 0 800 454 Z"/>
+<path d="M300 454 H419 L465 416 L525 492 L571 454 H724" fill="none" stroke="#6BE5CA" stroke-width="35" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M340 645 V704 M684 645 V704" stroke="#6BE5CA" stroke-width="24" stroke-linecap="round"/></g></svg>

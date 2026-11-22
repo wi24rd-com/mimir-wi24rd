@@ -1,0 +1,19 @@
+{
+  "replace": [
+    ".github/workflows/collect.yml",
+    ".github/workflows/test.yml",
+    "src",
+    "docs",
+    "test",
+    "tools",
+    "package.json",
+    "LICENSE",
+    "NOTICE",
+    "SECURITY.md",
+    "install.sh",
+    "CHANGELOG.md"
+  ],
+  "keep": [
+    "docs/CNAME"
+  ]
+}

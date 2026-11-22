@@ -1,0 +1,17 @@
+{
+ "unlockTitle": "Åbn dine tal",
+ "wrong": "Adgangsfrasen åbner ikke filen. Tjek, om der mangler et tegn, og prøv igen.",
+ "stillLocked": true,
+ "unlockMs": 175,
+ "headline": "699 visninger og 88 kloninger i de seneste 14 dage.",
+ "storage": "{\"local\":{},\"session\":{}}",
+ "tooltip": "14. nov. | Visninger | 20 (8 unikke) | Kloninger | 2 (1 unikke)",
+ "keyboardTip": "20. nov.",
+ "allRange": "6.478 visninger og 831 kloninger i alt siden 2026-07-25.",
+ "settingsFile": "{ \"version\": 1, \"visibility\": \"encrypted\", \"repos\": [ \"wi24rd-com/huginn-muninn\", \"wi24rd-com/grimnir\", \"wi24rd-com/Wi24rd-FTP\", \"wi24rd-com/Wi24rd-Site-Kit\", \"wi24rd-com/wi24rd-com\" ], \"public_badges\": [] } ",
+ "invalid": "Ikke gyldig endnu: \"not a repo\" is not a valid \"owner/name\"",
+ "copyDisabled": true,
+ "warn": "Skifter du fra krypteret til en åben tilstand, offentliggøres alt, der er indsamlet indtil nu. Indsamlingen afviser skiftet, indtil du starter én kørsel med MIMIR_MIGRATE=1.",
+ "problems": [],
+ "external": []
+}

@@ -1,0 +1,263 @@
+$ node --test   (Node v22.23.5)
+# Subtest: a full run fills every section and sends the token only as a header
+ok 1 - a full run fills every section and sends the token only as a header
+# Subtest: when traffic is refused, downloads are still kept and each failure is reported
+ok 2 - when traffic is refused, downloads are still kept and each failure is reported
+# Subtest: a failed run does not erase figures collected earlier
+ok 3 - a failed run does not erase figures collected earlier
+# Subtest: server errors are retried; a later success counts
+ok 4 - server errors are retried; a later success counts
+# Subtest: only the figures the owner listed are written, and dropped ones are removed
+ok 5 - only the figures the owner listed are written, and dropped ones are removed
+# Subtest: a repo the app is not installed on is named, and its traffic is not requested
+ok 6 - a repo the app is not installed on is named, and its traffic is not requested
+# Subtest: when the installation list cannot be read, every repo is still tried
+ok 7 - when the installation list cannot be read, every repo is still tried
+# Subtest: a valid config yields the owner and defaults
+ok 8 - a valid config yields the owner and defaults
+# Subtest: rejected: unknown visibility
+ok 9 - rejected: unknown visibility
+# Subtest: rejected: no repos
+ok 10 - rejected: no repos
+# Subtest: rejected: repo without owner
+ok 11 - rejected: repo without owner
+# Subtest: rejected: shell characters in a repo name
+ok 12 - rejected: shell characters in a repo name
+# Subtest: rejected: path traversal in a repo name
+ok 13 - rejected: path traversal in a repo name
+# Subtest: rejected: duplicate repo
+ok 14 - rejected: duplicate repo
+# Subtest: rejected: two owners
+ok 15 - rejected: two owners
+# Subtest: rejected: unknown badge
+ok 16 - rejected: unknown badge
+# Subtest: rejected: wrong version
+ok 17 - rejected: wrong version
+# Subtest: the mimir.json that ships with Mimir is the example, and setup refuses it
+ok 18 - the mimir.json that ships with Mimir is the example, and setup refuses it
+# Subtest: round trip returns the same data
+ok 19 - round trip returns the same data
+# Subtest: the envelope does not contain the data in readable form
+ok 20 - the envelope does not contain the data in readable form
+# Subtest: a wrong passphrase is rejected
+ok 21 - a wrong passphrase is rejected
+# Subtest: a changed file is rejected
+ok 22 - a changed file is rejected
+# Subtest: a short passphrase is refused
+ok 23 - a short passphrase is refused
+# Subtest: two encryptions of the same data differ (fresh salt and nonce)
+ok 24 - two encryptions of the same data differ (fresh salt and nonce)
+# Subtest: the default setting is 600,000 PBKDF2 rounds
+ok 25 - the default setting is 600,000 PBKDF2 rounds
+# Subtest: a browser can open it: decrypt with WebCrypto only
+ok 26 - a browser can open it: decrypt with WebCrypto only
+# Subtest: generated passphrases are long, grouped and not repeated
+ok 27 - generated passphrases are long, grouped and not repeated
+# Subtest: format 1: an earlier mimir.json is still valid
+ok 28 - format 1: an earlier mimir.json is still valid
+# Subtest: format 1: earlier open figures are read and summarized
+ok 29 - format 1: earlier open figures are read and summarized
+# Subtest: format 1: earlier encrypted figures open in the collector and in the browser
+ok 30 - format 1: earlier encrypted figures open in the collector and in the browser
+# Subtest: format 1: a collection on top of earlier figures keeps every earlier day
+ok 31 - format 1: a collection on top of earlier figures keeps every earlier day
+# Subtest: format 1: published figures and badges keep their shape
+ok 32 - format 1: published figures and badges keep their shape
+# Subtest: quiet days are counted from the newest commit on the main branch
+ok 33 - quiet days are counted from the newest commit on the main branch
+# Subtest: one warning is opened after 45 quiet days, and only for a public repository
+ok 34 - one warning is opened after 45 quiet days, and only for a public repository
+# Subtest: the warning is not repeated, and it closes after a commit
+ok 35 - the warning is not repeated, and it closes after a commit
+# Subtest: the warning says how long is left and what to do, and promises nothing unproven
+ok 36 - the warning says how long is left and what to do, and promises nothing unproven
+# Subtest: the workflow runs the guard and keeps the schedule on in a job of its own
+ok 37 - the workflow runs the guard and keeps the schedule on in a job of its own
+# Subtest: guard: opens one issue in the right repository after 45 quiet days
+ok 38 - guard: opens one issue in the right repository after 45 quiet days
+# Subtest: guard: does nothing while there is activity, when the warning is already open, or in a private repository
+ok 39 - guard: does nothing while there is activity, when the warning is already open, or in a private repository
+# Subtest: guard: closes the warning after a commit, and stays silent when GitHub does not answer
+ok 40 - guard: closes the warning after a commit, and stays silent when GitHub does not answer
+# Subtest: the kit copy is version 2.8.0
+ok 41 - the kit copy is version 2.8.0
+# Subtest: no file in the kit copy has been edited
+ok 42 - no file in the kit copy has been edited
+# Subtest: the kit copy holds no extra files, and its licences are with it
+ok 43 - the kit copy holds no extra files, and its licences are with it
+# Subtest: the page loads the kit before Mimir's own files, and nothing from another site
+ok 44 - the page loads the kit before Mimir's own files, and nothing from another site
+# Subtest: Mimir's own stylesheet uses the kit's tokens, never colour codes
+ok 45 - Mimir's own stylesheet uses the kit's tokens, never colour codes
+# Subtest: every token Mimir's own stylesheet uses exists
+ok 46 - every token Mimir's own stylesheet uses exists
+# Subtest: daily figures: a later, higher count replaces a partial day; a lower one never does
+ok 47 - daily figures: a later, higher count replaces a partial day; a lower one never does
+# Subtest: daily figures: running the same answer twice changes nothing
+ok 48 - daily figures: running the same answer twice changes nothing
+# Subtest: daily figures: days that fell out of the 14-day window are kept
+ok 49 - daily figures: days that fell out of the 14-day window are kept
+# Subtest: daily figures: malformed entries are ignored
+ok 50 - daily figures: malformed entries are ignored
+# Subtest: downloads: a point is added only when the counter changed
+ok 51 - downloads: a point is added only when the counter changed
+# Subtest: downloads: draft releases are left out
+ok 52 - downloads: draft releases are left out
+# Subtest: snapshots: top lists are stored per collection day and capped at ten
+ok 53 - snapshots: top lists are stored per collection day and capped at ten
+# Subtest: meta: unchanged figures do not add a new day
+ok 54 - meta: unchanged figures do not add a new day
+# Subtest: totals: latest download counters and latest stars are summed across repos
+ok 55 - totals: latest download counters and latest stars are summed across repos
+# Subtest: nothing is public unless it is chosen
+ok 56 - nothing is public unless it is chosen
+# Subtest: the totals agree with the collector, and there is one figure per repository
+ok 57 - the totals agree with the collector, and there is one figure per repository
+# Subtest: a repository is found whatever case mimir.json uses
+ok 58 - a repository is found whatever case mimir.json uses
+# Subtest: the badge code points at the data branch and is safe to paste
+ok 59 - the badge code points at the data branch and is safe to paste
+# Subtest: the Well is published only when chosen, and holds nothing but what it is drawn from
+ok 60 - the Well is published only when chosen, and holds nothing but what it is drawn from
+# Subtest: the published Well covers only the repositories in mimir.json
+ok 61 - the published Well covers only the repositories in mimir.json
+# Subtest: error correction matches the published "HELLO WORLD" 1-M example
+ok 62 - error correction matches the published "HELLO WORLD" 1-M example
+# Subtest: format and version information match the standard tables
+ok 63 - format and version information match the standard tables
+# Subtest: the smallest version that fits is chosen
+ok 64 - the smallest version that fits is chosen
+# Subtest: the grid has the fixed patterns in place
+ok 65 - the grid has the fixed patterns in place
+# Subtest: the mask with the lowest penalty is used, and the result is stable
+ok 66 - the mask with the lowest penalty is used, and the result is stable
+# Subtest: the SVG path has one square per dark module and a quiet zone
+ok 67 - the SVG path has one square per dark module and a quiet zone
+# Subtest: a passphrase sealed under a passkey secret opens with the same secret only
+ok 68 - a passphrase sealed under a passkey secret opens with the same secret only
+# Subtest: what is stored does not contain the passphrase, and changes every time
+ok 69 - what is stored does not contain the passphrase, and changes every time
+# Subtest: a changed stored value is refused
+ok 70 - a changed stored value is refused
+# Subtest: the key cannot be read back out
+ok 71 - the key cannot be read back out
+# Subtest: the manifest asks for read-only Administration and nothing else
+ok 72 - the manifest asks for read-only Administration and nothing else
+# Subtest: the start page posts the manifest to GitHub with a state value
+ok 73 - the start page posts the manifest to GitHub with a state value
+# Subtest: a callback with the right state exchanges the code and returns the app
+ok 74 - a callback with the right state exchanges the code and returns the app
+# Subtest: a callback with a wrong state, a bad code or a second use is refused
+ok 75 - a callback with a wrong state, a bad code or a second use is refused
+# Subtest: requests with a foreign Host header are refused
+ok 76 - requests with a foreign Host header are refused
+# Subtest: a refusal from GitHub is reported and no app is returned
+ok 77 - a refusal from GitHub is reported and no app is returned
+# Subtest: each copy gets an app name of its own, within GitHub's 34 characters
+ok 78 - each copy gets an app name of its own, within GitHub's 34 characters
+# Subtest: public mode: state and raw answers are readable JSON
+ok 79 - public mode: state and raw answers are readable JSON
+# Subtest: encrypted mode: nothing on disk names the repository
+ok 80 - encrypted mode: nothing on disk names the repository
+# Subtest: encrypted mode without a passphrase is refused
+ok 81 - encrypted mode without a passphrase is refused
+# Subtest: switching open data to encrypted is refused unless asked for
+ok 82 - switching open data to encrypted is refused unless asked for
+# Subtest: switching encrypted data to open is refused unless asked for
+ok 83 - switching encrypted data to open is refused unless asked for
+# Subtest: data from a newer schema is not overwritten
+ok 84 - data from a newer schema is not overwritten
+# Subtest: only days inside the period are summed
+ok 85 - only days inside the period are summed
+# Subtest: the series has one entry per day and marks days without a figure
+ok 86 - the series has one entry per day and marks days without a figure
+# Subtest: download growth is measured from the counter just before the period
+ok 87 - download growth is measured from the counter just before the period
+# Subtest: a file first seen inside the period is counted from that first sighting, and says so
+ok 88 - a file first seen inside the period is counted from that first sighting, and says so
+# Subtest: stars and referrers come from the latest snapshot
+ok 89 - stars and referrers come from the latest snapshot
+# Subtest: dayRange includes both ends
+ok 90 - dayRange includes both ends
+# Subtest: health: fresh within 36 hours, stopped after
+ok 91 - health: fresh within 36 hours, stopped after
+# Subtest: the summary sentences name the busiest repo, the top source and the top file in both languages
+ok 92 - the summary sentences name the busiest repo, the top source and the top file in both languages
+# Subtest: demo figures are the same on every run and counters never go down
+ok 93 - demo figures are the same on every run and counters never go down
+# Subtest: English and Danish have exactly the same entries
+ok 94 - English and Danish have exactly the same entries
+# Subtest: the busiest single day is reported for unique visitors
+ok 95 - the busiest single day is reported for unique visitors
+# Subtest: when every file was first seen inside the period, the text says since when downloads are counted
+ok 96 - when every file was first seen inside the period, the text says since when downloads are counted
+# Subtest: the kit's language engine gets the same plain texts in both languages
+ok 97 - the kit's language engine gets the same plain texts in both languages
+# Subtest: several repositories: counts are added per day, unique visitors are left out
+ok 98 - several repositories: counts are added per day, unique visitors are left out
+# Subtest: referrers across repositories are added and sorted, most visits first
+ok 99 - referrers across repositories are added and sorted, most visits first
+# Subtest: the version shown in the footer is the one in package.json
+ok 100 - the version shown in the footer is the one in package.json
+# Subtest: versions: parsed, compared, and the newest release is found
+ok 101 - versions: parsed, compared, and the newest release is found
+# Subtest: update: takes the newest version and leaves the owner's files alone
+ok 102 - update: takes the newest version and leaves the owner's files alone
+# Subtest: update: says so when there is nothing newer, or nothing released
+ok 103 - update: says so when there is nothing newer, or nothing released
+# Subtest: update: --check changes nothing, and a named version can be taken
+ok 104 - update: --check changes nothing, and a named version can be taken
+# Subtest: update: refuses a clone with uncommitted changes, a new major version, and a folder that is not Mimir
+ok 105 - update: refuses a clone with uncommitted changes, a new major version, and a folder that is not Mimir
+# Subtest: update: a file list from a version cannot point outside Mimir's own files
+ok 106 - update: a file list from a version cannot point outside Mimir's own files
+# Subtest: the browser code opens what the collector encrypted
+ok 107 - the browser code opens what the collector encrypted
+# Subtest: the browser code reports a wrong passphrase as such
+ok 108 - the browser code reports a wrong passphrase as such
+# Subtest: dashboard server: serves the page with a strict policy and no caching
+ok 109 - dashboard server: serves the page with a strict policy and no caching
+# Subtest: dashboard server: nothing outside the dashboard folder can be read
+ok 110 - dashboard server: nothing outside the dashboard folder can be read
+# Subtest: dashboard server: figures, settings and source are served; a missing data branch is explained
+ok 111 - dashboard server: figures, settings and source are served; a missing data branch is explained
+# Subtest: terminal view: arguments
+ok 112 - terminal view: arguments
+# Subtest: terminal view: shows the sentences, one row per repo and one per file
+ok 113 - terminal view: shows the sentences, one row per repo and one per file
+# Subtest: terminal view: warns when collection has stopped or was incomplete
+ok 114 - terminal view: warns when collection has stopped or was incomplete
+# Subtest: terminal view: says why when GitHub has switched the workflow off
+ok 115 - terminal view: says why when GitHub has switched the workflow off
+# Subtest: workflow state: read through the GitHub CLI, and anything unexpected is refused
+ok 116 - workflow state: read through the GitHub CLI, and anything unexpected is refused
+# Subtest: figures are read from the data branch of a real git clone, encrypted and open
+ok 117 - figures are read from the data branch of a real git clone, encrypted and open
+# Subtest: terminal view: files first seen inside the period are marked and explained
+ok 118 - terminal view: files first seen inside the period are marked and explained
+# Subtest: scale: five whole-number steps that cover 1 to the maximum without gaps
+ok 119 - scale: five whole-number steps that cover 1 to the maximum without gaps
+# Subtest: scale: a small maximum gives fewer steps, ending on the strongest
+ok 120 - scale: a small maximum gives fewer steps, ending on the strongest
+# Subtest: scale: every count lands in the step whose range holds it
+ok 121 - scale: every count lands in the step whose range holds it
+# Subtest: ripples: none without views, one to five otherwise, never fewer for more views
+ok 122 - ripples: none without views, one to five otherwise, never fewer for more views
+# Subtest: drops: one per download, at most twelve
+ok 123 - drops: one per download, at most twelve
+# Subtest: rim: one stone per day, clockwise from the top, with the level of that day
+ok 124 - rim: one stone per day, clockwise from the top, with the level of that day
+# Subtest: arc: a stone wider than half the circle is drawn the long way round
+ok 125 - arc: a stone wider than half the circle is drawn the long way round
+# Subtest: sources: one repository sits in the middle, several are spread evenly on a circle
+ok 126 - sources: one repository sits in the middle, several are spread evenly on a circle
+# Subtest: pulse: the busiest day reaches the full height, unknown days break the line
+ok 127 - pulse: the busiest day reaches the full height, unknown days break the line
+# tests 127
+# suites 0
+# pass 127
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3492.159392

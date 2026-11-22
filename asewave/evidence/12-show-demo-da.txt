@@ -1,0 +1,21 @@
+$ node src/show.mjs --demo --lang da
+
+Wi24rd Mimir  Sidst indsamlet for 3 timer siden
+
+699 visninger og 88 kloninger i de seneste 14 dage.
+lantern havde flest besøgende (499 visninger).
+De fleste kom fra news.ycombinator.com.
+Release-filer blev hentet 8 gange; lantern-2.1.0-windows.exe oftest (5).
+
+Repositories  Visninger  Unikke/dag, maks  Kloninger  Unikke/dag, maks  Downloads   Stjerner
+lantern             499                26         64                 6        581        214
+quill-notes         149                 7         19                 1         37         48
+tidepool             51                 3          5                 1          0          6
+
+Fil                                          I alt   I perioden
+lantern v2.0.0 lantern-2.0.0-macos.zip         402           +0
+lantern v2.1.0 lantern-2.1.0-windows.exe       118           +5
+lantern v2.1.0 lantern-2.1.0-macos.zip          61           +3
+quill-notes v0.9.2 quill-0.9.2.zip              37           +0
+
+Unikke besøgende kan ikke lægges sammen på tværs af dage. Den samme person på to dage tæller to gange.

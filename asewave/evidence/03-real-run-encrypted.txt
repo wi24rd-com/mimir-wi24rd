@@ -1,0 +1,14 @@
+$ MIMIR_DATA_DIR=<tmp> MIMIR_PASSPHRASE=<test value> node src/collect.mjs   (visibility encrypted)
+No MIMIR_TOKEN: traffic figures need it and will be reported as failed.
+Mimir 2026-11-21: 5 repos, 6 of 30 requests succeeded, mode encrypted.
+
+$ find <tmp> -type f
+./raw/2026-11-21.enc
+./state.enc
+
+$ grep -rlE "huginn|grimnir|Wi24rd|download" <tmp>
+(no match)
+
+$ guard: encrypted run against the public data folder
+Mimir stopped: this data folder holds unencrypted data. Switching to "encrypted" does not remove what is already in the git history. Start a fresh data branch, or set MIMIR_MIGRATE=1 to convert anyway.
+exit=1

@@ -1,0 +1,9 @@
+The non-demo path, after Jan reported that his passphrase opened the terminal
+view but not the browser. A data branch was made with invented figures,
+encrypted with a test passphrase in the same form as a generated one, and the
+dashboard was started without --demo and opened in Chrome without a screen.
+
+{"boxes":["Passphrase","Remember on this device"],"opened":"699 views and 88 clones in the last 14 days.","real":{"demoChip":false,"demoBanner":false},"problems":[]}
+
+The demo, same build:
+{"chip":"iDemo","banner":"iThis is the demo with invented figures. Your own passphrase does not open it. The demo passphrase is shown in the terminal where you started it."}

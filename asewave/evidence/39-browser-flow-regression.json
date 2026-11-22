@@ -1,0 +1,105 @@
+{
+ "unlockTitle": "Open your figures",
+ "wrong": "That passphrase does not open the file. Check for a missing character and try again.",
+ "stillLocked": true,
+ "headline": "699 views and 88 clones in the last 14 days.",
+ "storage": "{\"local\":{},\"session\":{}}",
+ "fonts": [
+  "Inter",
+  "JetBrains Mono"
+ ],
+ "tabs": [
+  "Overview*",
+  "Traffic",
+  "Downloads",
+  "Sources",
+  "The Well"
+ ],
+ "groups": [
+  "Figures",
+  "Period",
+  "Phone"
+ ],
+ "commands": [
+  "Fetch again (primary)",
+  "14 days (pressed)",
+  "30 days",
+  "90 days",
+  "Everything",
+  "Open on phone",
+  "More"
+ ],
+ "titleButtons": [
+  "Skift til dansk",
+  "Lock the figures",
+  "Theme: Follow system. Change theme",
+  "Open settings"
+ ],
+ "markColor": "rgb(53, 214, 179)",
+ "hash": "#traffic",
+ "tabAfter": "Traffic",
+ "treeCurrent": "lantern499",
+ "chip": "i14 days",
+ "tooltip": "14 Nov | Views | 20 (8 unique) | Clones | 2 (1 unique)",
+ "tooltipAll": "14 Nov | Views | 28 | Clones | 3",
+ "pressed": [
+  "90 days"
+ ],
+ "chip90": "i90 days",
+ "downloadsHead": [
+  "File",
+  "Repository",
+  "Release",
+  "Total",
+  "In period"
+ ],
+ "downloadsRows": 4,
+ "sourcesBoxes": [
+  "Where visitors came from",
+  "Most viewed pages"
+ ],
+ "wellTab": "The Well",
+ "wellStones": 90,
+ "wellChip": "i90 days",
+ "wellSources": [
+  "lantern: 3,721 views, 491 clones, +138 downloads",
+  "quill-notes: 1,051 views, 134 clones, +25 downloads",
+  "tidepool: 325 views, 37 clones, +0 downloads"
+ ],
+ "wellTableRows": 3,
+ "wellScale": [
+  "No views",
+  "1–82",
+  "83–163",
+  "164–244",
+  "245–325",
+  "326–406"
+ ],
+ "wellColors": {
+  "pulse": "rgb(53, 214, 179)",
+  "ring": "rgb(111, 165, 255)",
+  "clone": "rgb(255, 176, 102)",
+  "drop": "rgb(185, 161, 255)"
+ },
+ "wellTooltip": "lantern | Views | 3,721 | Clones | 491 | Downloads | +138",
+ "wellHashAfterEnter": "#well",
+ "wellDimmed": 2,
+ "wellTreeCurrent": "lantern3,721",
+ "wellReducedMotion": {
+  "ring": "none",
+  "dot": "absent"
+ },
+ "langAfter": "da",
+ "tabsDa": [
+  "Oversigt",
+  "Trafik",
+  "Downloads",
+  "Kilder",
+  "Brønden"
+ ],
+ "afterRefreshStillOpen": true,
+ "copyDisabled": true,
+ "lockedAgain": true,
+ "problems": [],
+ "external": []
+}

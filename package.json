@@ -1,6 +1,6 @@
 {
   "name": "wi24rd-mimir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "license": "Apache-2.0",
   "description": "Wi24rd Mimir - GH Insights-tracker. Keeps GitHub traffic and release download history in your own account.",

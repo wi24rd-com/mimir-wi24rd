@@ -5,6 +5,13 @@ What each version of Wi24rd Mimir holds. Versions follow
 `mimir.json` and the `data` branch of an older one with nothing for you to do.
 Take a newer version with `node src/update.mjs`.
 
+## 1.0.1 (2026-11-22)
+
+- Fixed: the tests required the README to state the version. A copy keeps its
+  own README through an update, so its tests would fail after the next one.
+  The check now applies to this repository only.
+- The README links to a live example: Wi24rd's own figures.
+
 ## 1.0.0 (2026-11-22)
 
 The first release.

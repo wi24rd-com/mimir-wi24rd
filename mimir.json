@@ -1,8 +1,18 @@
 {
   "version": 1,
-  "visibility": "encrypted",
+  "visibility": "public",
   "repos": [
-    "your-account/your-repository"
+    "wi24rd-com/grimnir",
+    "wi24rd-com/huginn-muninn",
+    "wi24rd-com/mimir",
+    "wi24rd-com/wi24rd-com",
+    "wi24rd-com/Wi24rd-FTP",
+    "wi24rd-com/Wi24rd-Site-Kit"
   ],
-  "public_badges": []
+  "public_badges": [
+    "total_downloads",
+    "stars",
+    "repo_downloads",
+    "well"
+  ]
 }

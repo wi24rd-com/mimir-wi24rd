@@ -74,6 +74,10 @@
     "2026-11-25": {
      "count": 0,
      "uniques": 0
+    },
+    "2026-11-26": {
+     "count": 0,
+     "uniques": 0
     }
    },
    "clones": {
@@ -148,6 +152,10 @@
     "2026-11-25": {
      "count": 3,
      "uniques": 3
+    },
+    "2026-11-26": {
+     "count": 0,
+     "uniques": 0
     }
    },
    "referrers": {
@@ -180,6 +188,13 @@
      }
     ],
     "2026-11-26": [
+     {
+      "referrer": "github.com",
+      "count": 3,
+      "uniques": 1
+     }
+    ],
+    "2026-11-27": [
      {
       "referrer": "github.com",
       "count": 3,
@@ -222,6 +237,13 @@
       "count": 3,
       "uniques": 1
      }
+    ],
+    "2026-11-27": [
+     {
+      "path": "/wi24rd-com/grimnir",
+      "count": 3,
+      "uniques": 1
+     }
     ]
    },
    "downloads": {
@@ -246,12 +268,12 @@
     }
    },
    "last_success": {
-    "meta": "2026-11-26",
-    "downloads": "2026-11-26",
-    "views": "2026-11-26",
-    "clones": "2026-11-26",
-    "referrers": "2026-11-26",
-    "paths": "2026-11-26"
+    "meta": "2026-11-27",
+    "downloads": "2026-11-27",
+    "views": "2026-11-27",
+    "clones": "2026-11-27",
+    "referrers": "2026-11-27",
+    "paths": "2026-11-27"
    }
   },
   "wi24rd-com/huginn-muninn": {
@@ -327,6 +349,10 @@
     "2026-11-25": {
      "count": 0,
      "uniques": 0
+    },
+    "2026-11-26": {
+     "count": 6,
+     "uniques": 6
     }
    },
    "clones": {
@@ -401,6 +427,10 @@
     "2026-11-25": {
      "count": 0,
      "uniques": 0
+    },
+    "2026-11-26": {
+     "count": 4,
+     "uniques": 2
     }
    },
    "referrers": {
@@ -433,6 +463,13 @@
      }
     ],
     "2026-11-26": [
+     {
+      "referrer": "github.com",
+      "count": 13,
+      "uniques": 1
+     }
+    ],
+    "2026-11-27": [
      {
       "referrer": "github.com",
       "count": 13,
@@ -700,6 +737,58 @@
       "count": 1,
       "uniques": 1
      }
+    ],
+    "2026-11-27": [
+     {
+      "path": "/wi24rd-com/huginn-muninn",
+      "count": 23,
+      "uniques": 6
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/actions",
+      "count": 4,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/releases/tag/v1.1.0",
+      "count": 3,
+      "uniques": 2
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/actions/runs/44147884164",
+      "count": 3,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/actions/runs/44588647399",
+      "count": 3,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/actions/workflows/ci.yml",
+      "count": 3,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/blob/main/docs/manual/en/00-index.md",
+      "count": 1,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/blob/main/docs/manual/en/20-installation.md",
+      "count": 1,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/blob/main/docs/manual/en/31-cloudflare.md",
+      "count": 1,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/huginn-muninn/blob/main/docs/manual/en/70-data.md",
+      "count": 1,
+      "uniques": 1
+     }
     ]
    },
    "downloads": {
@@ -724,12 +813,12 @@
     }
    },
    "last_success": {
-    "meta": "2026-11-26",
-    "downloads": "2026-11-26",
-    "views": "2026-11-26",
-    "clones": "2026-11-26",
-    "referrers": "2026-11-26",
-    "paths": "2026-11-26"
+    "meta": "2026-11-27",
+    "downloads": "2026-11-27",
+    "views": "2026-11-27",
+    "clones": "2026-11-27",
+    "referrers": "2026-11-27",
+    "paths": "2026-11-27"
    }
   },
   "wi24rd-com/mimir": {
@@ -803,6 +892,10 @@
      "uniques": 0
     },
     "2026-11-25": {
+     "count": 0,
+     "uniques": 0
+    },
+    "2026-11-26": {
      "count": 0,
      "uniques": 0
     }
@@ -879,6 +972,10 @@
     "2026-11-25": {
      "count": 0,
      "uniques": 0
+    },
+    "2026-11-26": {
+     "count": 0,
+     "uniques": 0
     }
    },
    "referrers": {
@@ -911,6 +1008,13 @@
      }
     ],
     "2026-11-26": [
+     {
+      "referrer": "github.com",
+      "count": 6,
+      "uniques": 2
+     }
+    ],
+    "2026-11-27": [
      {
       "referrer": "github.com",
       "count": 6,
@@ -1073,6 +1177,38 @@
       "count": 1,
       "uniques": 1
      }
+    ],
+    "2026-11-27": [
+     {
+      "path": "/wi24rd-com/mimir",
+      "count": 7,
+      "uniques": 2
+     },
+     {
+      "path": "/wi24rd-com/mimir/actions",
+      "count": 2,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/mimir/blob/main/docs/kit/LICENSE",
+      "count": 2,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/mimir/blob/main/docs/kit/LICENSE.md",
+      "count": 1,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/mimir/tree/main/asewave",
+      "count": 1,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/mimir/tree/main/docs/kit",
+      "count": 1,
+      "uniques": 1
+     }
     ]
    },
    "downloads": {},
@@ -1084,12 +1220,12 @@
     }
    },
    "last_success": {
-    "meta": "2026-11-26",
-    "downloads": "2026-11-26",
-    "views": "2026-11-26",
-    "clones": "2026-11-26",
-    "referrers": "2026-11-26",
-    "paths": "2026-11-26"
+    "meta": "2026-11-27",
+    "downloads": "2026-11-27",
+    "views": "2026-11-27",
+    "clones": "2026-11-27",
+    "referrers": "2026-11-27",
+    "paths": "2026-11-27"
    }
   },
   "wi24rd-com/wi24rd-com": {
@@ -1163,6 +1299,10 @@
      "uniques": 0
     },
     "2026-11-25": {
+     "count": 0,
+     "uniques": 0
+    },
+    "2026-11-26": {
      "count": 0,
      "uniques": 0
     }
@@ -1239,6 +1379,10 @@
     "2026-11-25": {
      "count": 1,
      "uniques": 1
+    },
+    "2026-11-26": {
+     "count": 0,
+     "uniques": 0
     }
    },
    "referrers": {
@@ -1246,14 +1390,16 @@
     "2026-11-23": [],
     "2026-11-24": [],
     "2026-11-25": [],
-    "2026-11-26": []
+    "2026-11-26": [],
+    "2026-11-27": []
    },
    "paths": {
     "2026-11-22": [],
     "2026-11-23": [],
     "2026-11-24": [],
     "2026-11-25": [],
-    "2026-11-26": []
+    "2026-11-26": [],
+    "2026-11-27": []
    },
    "downloads": {},
    "meta": {
@@ -1264,12 +1410,12 @@
     }
    },
    "last_success": {
-    "meta": "2026-11-26",
-    "downloads": "2026-11-26",
-    "views": "2026-11-26",
-    "clones": "2026-11-26",
-    "referrers": "2026-11-26",
-    "paths": "2026-11-26"
+    "meta": "2026-11-27",
+    "downloads": "2026-11-27",
+    "views": "2026-11-27",
+    "clones": "2026-11-27",
+    "referrers": "2026-11-27",
+    "paths": "2026-11-27"
    }
   },
   "wi24rd-com/Wi24rd-FTP": {
@@ -1343,6 +1489,10 @@
      "uniques": 0
     },
     "2026-11-25": {
+     "count": 0,
+     "uniques": 0
+    },
+    "2026-11-26": {
      "count": 0,
      "uniques": 0
     }
@@ -1419,6 +1569,10 @@
     "2026-11-25": {
      "count": 0,
      "uniques": 0
+    },
+    "2026-11-26": {
+     "count": 1,
+     "uniques": 1
     }
    },
    "referrers": {
@@ -1451,6 +1605,13 @@
      }
     ],
     "2026-11-26": [
+     {
+      "referrer": "github.com",
+      "count": 1,
+      "uniques": 1
+     }
+    ],
+    "2026-11-27": [
      {
       "referrer": "github.com",
       "count": 1,
@@ -1518,6 +1679,18 @@
       "count": 1,
       "uniques": 1
      }
+    ],
+    "2026-11-27": [
+     {
+      "path": "/wi24rd-com/Wi24rd-FTP",
+      "count": 1,
+      "uniques": 1
+     },
+     {
+      "path": "/wi24rd-com/Wi24rd-FTP/releases",
+      "count": 1,
+      "uniques": 1
+     }
     ]
    },
    "downloads": {
@@ -1548,12 +1721,12 @@
     }
    },
    "last_success": {
-    "meta": "2026-11-26",
-    "downloads": "2026-11-26",
-    "views": "2026-11-26",
-    "clones": "2026-11-26",
-    "referrers": "2026-11-26",
-    "paths": "2026-11-26"
+    "meta": "2026-11-27",
+    "downloads": "2026-11-27",
+    "views": "2026-11-27",
+    "clones": "2026-11-27",
+    "referrers": "2026-11-27",
+    "paths": "2026-11-27"
    }
   },
   "wi24rd-com/Wi24rd-Site-Kit": {
@@ -1629,6 +1802,10 @@
     "2026-11-25": {
      "count": 0,
      "uniques": 0
+    },
+    "2026-11-26": {
+     "count": 1,
+     "uniques": 1
     }
    },
    "clones": {
@@ -1703,6 +1880,10 @@
     "2026-11-25": {
      "count": 1,
      "uniques": 1
+    },
+    "2026-11-26": {
+     "count": 3,
+     "uniques": 2
     }
    },
    "referrers": {
@@ -1749,6 +1930,18 @@
       "referrer": "github.com",
       "count": 3,
       "uniques": 3
+     }
+    ],
+    "2026-11-27": [
+     {
+      "referrer": "github.com",
+      "count": 3,
+      "uniques": 3
+     },
+     {
+      "referrer": "wi24rd.com",
+      "count": 1,
+      "uniques": 1
      }
     ]
    },
@@ -1817,6 +2010,18 @@
       "count": 1,
       "uniques": 1
      }
+    ],
+    "2026-11-27": [
+     {
+      "path": "/wi24rd-com/Wi24rd-Site-Kit",
+      "count": 6,
+      "uniques": 6
+     },
+     {
+      "path": "/wi24rd-com/Wi24rd-Site-Kit/actions/workflows/kvalitet.yml",
+      "count": 1,
+      "uniques": 1
+     }
     ]
    },
    "downloads": {},
@@ -1828,18 +2033,18 @@
     }
    },
    "last_success": {
-    "meta": "2026-11-26",
-    "downloads": "2026-11-26",
-    "views": "2026-11-26",
-    "clones": "2026-11-26",
-    "referrers": "2026-11-26",
-    "paths": "2026-11-26"
+    "meta": "2026-11-27",
+    "downloads": "2026-11-27",
+    "views": "2026-11-27",
+    "clones": "2026-11-27",
+    "referrers": "2026-11-27",
+    "paths": "2026-11-27"
    }
   }
  },
  "health": {
-  "last_run": "2026-11-26T23:53:00Z",
-  "runs": 10,
+  "last_run": "2026-11-27T12:26:38Z",
+  "runs": 11,
   "last_errors": []
  }
 }
